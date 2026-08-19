@@ -1,0 +1,1509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Mehar Creation | Fine Fabrics & Textile Sourcing</title>
+
+  <meta name="description"
+        content="Mehar Creation is a Surat-based textile sourcing and fabric trading company supplying quality RFD, viscose, muslin, organza and specialty fabrics across India.">
+
+  <meta name="keywords"
+        content="Mehar Creation, textile supplier Surat, fabric supplier India, RFD fabric, viscose fabric, muslin fabric, viscose shantoon, textile sourcing">
+
+  <meta name="author" content="Mehar Creation">
+
+  <style>
+
+    /* ==============================
+       RESET
+    ============================== */
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f4ee;
+      color: #292722;
+      line-height: 1.6;
+    }
+
+    img {
+      width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+
+    /* ==============================
+       VARIABLES
+    ============================== */
+
+    :root {
+      --cream: #f7f4ee;
+      --ivory: #fbfaf7;
+      --beige: #e7dfd1;
+      --dark: #292722;
+      --muted: #777168;
+      --border: #ddd5c8;
+      --accent: #9b8063;
+    }
+
+
+    /* ==============================
+       HEADER
+    ============================== */
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+
+      background: rgba(247, 244, 238, 0.94);
+      backdrop-filter: blur(10px);
+
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+    }
+
+    .nav {
+      max-width: 1250px;
+      margin: auto;
+
+      padding: 20px 30px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-family: Georgia, serif;
+      font-size: 24px;
+      letter-spacing: 3px;
+      font-weight: normal;
+    }
+
+    .logo span {
+      display: block;
+      font-family: Arial, sans-serif;
+      font-size: 9px;
+      letter-spacing: 4px;
+      margin-top: 3px;
+      color: var(--muted);
+    }
+
+    nav {
+      display: flex;
+      gap: 32px;
+    }
+
+    nav a {
+      font-size: 12px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #514d46;
+
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+
+    /* ==============================
+       HERO
+    ============================== */
+
+    .hero {
+      min-height: 100vh;
+
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      padding-top: 80px;
+    }
+
+    .hero-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      padding: 80px;
+    }
+
+    .eyebrow {
+      font-size: 11px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--accent);
+
+      margin-bottom: 25px;
+    }
+
+    .hero h1 {
+      font-family: Georgia, serif;
+      font-weight: normal;
+
+      font-size: clamp(48px, 6vw, 88px);
+
+      line-height: 1.02;
+
+      margin-bottom: 30px;
+    }
+
+    .hero p {
+      max-width: 500px;
+
+      font-size: 16px;
+      color: var(--muted);
+
+      margin-bottom: 40px;
+    }
+
+    .button {
+      display: inline-block;
+
+      width: fit-content;
+
+      padding: 15px 28px;
+
+      background: var(--dark);
+      color: white;
+
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+
+      transition: 0.3s;
+    }
+
+    .button:hover {
+      background: var(--accent);
+    }
+
+    .hero-image {
+      min-height: 100%;
+
+      background-image:
+        url("https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=1400&q=85");
+
+      background-size: cover;
+      background-position: center;
+    }
+
+
+    /* ==============================
+       INTRO
+    ============================== */
+
+    .intro {
+      padding: 130px 30px;
+
+      background: var(--ivory);
+
+      text-align: center;
+    }
+
+    .intro-inner {
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .intro h2 {
+      font-family: Georgia, serif;
+      font-weight: normal;
+
+      font-size: clamp(36px, 5vw, 60px);
+
+      line-height: 1.15;
+
+      margin-bottom: 30px;
+    }
+
+    .intro p {
+      font-size: 16px;
+      color: var(--muted);
+      max-width: 700px;
+      margin: auto;
+    }
+
+
+    /* ==============================
+       FABRICS
+    ============================== */
+
+    .section {
+      max-width: 1250px;
+      margin: auto;
+
+      padding: 120px 30px;
+    }
+
+    .section-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+
+      margin-bottom: 60px;
+    }
+
+    .section-heading h2 {
+      font-family: Georgia, serif;
+      font-size: 52px;
+      font-weight: normal;
+    }
+
+    .section-heading p {
+      max-width: 400px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+
+    /* ==============================
+       FABRIC GRID
+    ============================== */
+
+    .fabric-grid {
+      display: grid;
+
+      grid-template-columns: repeat(2, 1fr);
+
+      gap: 25px;
+    }
+
+    .fabric-card {
+      position: relative;
+      overflow: hidden;
+
+      min-height: 500px;
+
+      background: var(--beige);
+    }
+
+    .fabric-card img {
+      height: 100%;
+      min-height: 500px;
+
+      object-fit: cover;
+
+      transition: transform 0.7s ease;
+    }
+
+    .fabric-card:hover img {
+      transform: scale(1.04);
+    }
+
+    .fabric-info {
+      position: absolute;
+
+      bottom: 0;
+      left: 0;
+
+      width: 100%;
+
+      padding: 35px;
+
+      background: linear-gradient(
+        transparent,
+        rgba(0,0,0,0.65)
+      );
+
+      color: white;
+    }
+
+    .fabric-info h3 {
+      font-family: Georgia, serif;
+      font-size: 32px;
+      font-weight: normal;
+    }
+
+    .fabric-info p {
+      font-size: 12px;
+      letter-spacing: 1px;
+      opacity: 0.85;
+      margin-top: 5px;
+    }
+
+
+    /* ==============================
+       FABRIC LIST
+    ============================== */
+
+    .fabric-list {
+      margin-top: 80px;
+
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      border-top: 1px solid var(--border);
+    }
+
+    .fabric-item {
+      padding: 25px 10px;
+
+      border-bottom: 1px solid var(--border);
+
+      font-family: Georgia, serif;
+      font-size: 19px;
+    }
+
+    .fabric-item span {
+      display: block;
+
+      font-family: Arial, sans-serif;
+
+      font-size: 10px;
+
+      letter-spacing: 2px;
+
+      color: var(--accent);
+
+      margin-bottom: 6px;
+    }
+
+
+    /* ==============================
+       ABOUT
+    ============================== */
+
+    .about {
+      background: var(--dark);
+      color: white;
+    }
+
+    .about-inner {
+      max-width: 1250px;
+      margin: auto;
+
+      padding: 130px 30px;
+
+      display: grid;
+
+      grid-template-columns: 1fr 1fr;
+
+      gap: 100px;
+    }
+
+    .about h2 {
+      font-family: Georgia, serif;
+
+      font-size: 60px;
+
+      font-weight: normal;
+
+      line-height: 1.05;
+    }
+
+    .about-text p {
+      color: #c5c0b7;
+
+      margin-bottom: 25px;
+
+      font-size: 15px;
+    }
+
+    .about-label {
+      color: #b49779;
+
+      font-size: 10px;
+
+      letter-spacing: 3px;
+
+      text-transform: uppercase;
+
+      margin-bottom: 20px;
+    }
+
+
+    /* ==============================
+       EXPERTISE
+    ============================== */
+
+    .expertise-grid {
+      display: grid;
+
+      grid-template-columns: repeat(4, 1fr);
+
+      border-top: 1px solid var(--border);
+    }
+
+    .expertise {
+      padding: 40px 25px;
+
+      border-right: 1px solid var(--border);
+    }
+
+    .expertise:last-child {
+      border-right: none;
+    }
+
+    .number {
+      font-family: Georgia, serif;
+
+      font-size: 28px;
+
+      color: var(--accent);
+
+      margin-bottom: 25px;
+    }
+
+    .expertise h3 {
+      font-family: Georgia, serif;
+
+      font-weight: normal;
+
+      font-size: 23px;
+
+      margin-bottom: 15px;
+    }
+
+    .expertise p {
+      color: var(--muted);
+
+      font-size: 13px;
+    }
+
+
+    /* ==============================
+       APPLICATIONS
+    ============================== */
+
+    .applications {
+      background: var(--ivory);
+
+      padding: 120px 30px;
+    }
+
+    .applications-inner {
+      max-width: 1250px;
+      margin: auto;
+    }
+
+    .application-grid {
+      display: grid;
+
+      grid-template-columns: repeat(4, 1fr);
+
+      gap: 15px;
+
+      margin-top: 60px;
+    }
+
+    .application {
+      padding: 45px 25px;
+
+      border: 1px solid var(--border);
+
+      text-align: center;
+
+      transition: 0.3s;
+    }
+
+    .application:hover {
+      transform: translateY(-5px);
+      background: white;
+    }
+
+    .application h3 {
+      font-family: Georgia, serif;
+
+      font-size: 21px;
+
+      font-weight: normal;
+    }
+
+
+    /* ==============================
+       JOURNAL
+    ============================== */
+
+    .journal-grid {
+      display: grid;
+
+      grid-template-columns: repeat(3, 1fr);
+
+      gap: 25px;
+    }
+
+    .journal-card {
+      border-top: 1px solid var(--border);
+
+      padding-top: 20px;
+    }
+
+    .journal-card img {
+      height: 250px;
+
+      object-fit: cover;
+
+      margin-bottom: 25px;
+    }
+
+    .journal-card small {
+      color: var(--accent);
+
+      text-transform: uppercase;
+
+      letter-spacing: 2px;
+
+      font-size: 9px;
+    }
+
+    .journal-card h3 {
+      font-family: Georgia, serif;
+
+      font-size: 26px;
+
+      font-weight: normal;
+
+      margin-top: 10px;
+    }
+
+
+    /* ==============================
+       CONTACT
+    ============================== */
+
+    .contact {
+      background: var(--beige);
+
+      padding: 120px 30px;
+    }
+
+    .contact-inner {
+      max-width: 900px;
+      margin: auto;
+
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-family: Georgia, serif;
+
+      font-size: clamp(40px, 6vw, 70px);
+
+      font-weight: normal;
+
+      line-height: 1.05;
+
+      margin-bottom: 25px;
+    }
+
+    .contact p {
+      color: var(--muted);
+
+      margin-bottom: 40px;
+    }
+
+    .contact-details {
+      margin-top: 60px;
+
+      display: flex;
+
+      justify-content: center;
+
+      gap: 50px;
+
+      flex-wrap: wrap;
+    }
+
+    .contact-details div {
+      font-size: 12px;
+
+      letter-spacing: 1px;
+    }
+
+    .contact-details span {
+      display: block;
+
+      color: var(--accent);
+
+      font-size: 9px;
+
+      letter-spacing: 2px;
+
+      text-transform: uppercase;
+
+      margin-bottom: 5px;
+    }
+
+
+    /* ==============================
+       FOOTER
+    ============================== */
+
+    footer {
+      background: var(--dark);
+
+      color: white;
+
+      padding: 50px 30px;
+    }
+
+    .footer-inner {
+      max-width: 1250px;
+      margin: auto;
+
+      display: flex;
+
+      justify-content: space-between;
+
+      align-items: center;
+    }
+
+    footer .logo {
+      font-size: 20px;
+    }
+
+    footer p {
+      color: #999;
+
+      font-size: 11px;
+    }
+
+
+    /* ==============================
+       WHATSAPP
+    ============================== */
+
+    .whatsapp {
+      position: fixed;
+
+      right: 25px;
+      bottom: 25px;
+
+      width: 55px;
+      height: 55px;
+
+      border-radius: 50%;
+
+      background: #292722;
+
+      color: white;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      font-size: 20px;
+
+      z-index: 999;
+
+      box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+
+      transition: 0.3s;
+    }
+
+    .whatsapp:hover {
+      transform: translateY(-4px);
+      background: #806c55;
+    }
+
+
+    /* ==============================
+       MOBILE
+    ============================== */
+
+    @media(max-width: 800px) {
+
+      nav {
+        display: none;
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+
+        min-height: auto;
+      }
+
+      .hero-text {
+        padding: 120px 25px 70px;
+      }
+
+      .hero-image {
+        min-height: 500px;
+      }
+
+      .section {
+        padding: 80px 20px;
+      }
+
+      .section-heading {
+        display: block;
+      }
+
+      .section-heading h2 {
+        font-size: 42px;
+
+        margin-bottom: 20px;
+      }
+
+      .fabric-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .fabric-card {
+        min-height: 450px;
+      }
+
+      .fabric-card img {
+        min-height: 450px;
+      }
+
+      .fabric-list {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .about-inner {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+        padding: 80px 25px;
+      }
+
+      .about h2 {
+        font-size: 48px;
+      }
+
+      .expertise-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .expertise {
+        border-bottom: 1px solid var(--border);
+      }
+
+      .application-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .journal-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-inner {
+        flex-direction: column;
+
+        gap: 20px;
+
+        text-align: center;
+      }
+
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+
+<!-- ==============================
+     HEADER
+============================== -->
+
+<header>
+
+  <div class="nav">
+
+    <a href="#" class="logo">
+
+      MEHAR CREATION
+
+      <span>TEXTILES • SOURCING • QUALITY</span>
+
+    </a>
+
+    <nav>
+
+      <a href="#fabrics">Fabrics</a>
+
+      <a href="#about">About</a>
+
+      <a href="#expertise">Expertise</a>
+
+      <a href="#journal">Journal</a>
+
+      <a href="#contact">Contact</a>
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+
+<!-- ==============================
+     HERO
+============================== -->
+
+<section class="hero">
+
+  <div class="hero-text">
+
+    <div class="eyebrow">
+      Textile Sourcing • Surat, India
+    </div>
+
+    <h1>
+      Fabrics<br>
+      with purpose.
+    </h1>
+
+    <p>
+      Mehar Creation is a textile sourcing and fabric trading house
+      connecting quality fabrics with manufacturers, designers,
+      fashion brands and businesses across India.
+    </p>
+
+    <a href="#fabrics" class="button">
+      Explore Fabrics
+    </a>
+
+  </div>
+
+
+  <div class="hero-image"></div>
+
+</section>
+
+
+
+<!-- ==============================
+     INTRO
+============================== -->
+
+<section class="intro">
+
+  <div class="intro-inner">
+
+    <div class="eyebrow">
+      Mehar Creation
+    </div>
+
+    <h2>
+      A curated source<br>
+      for fine fabrics.
+    </h2>
+
+    <p>
+      From RFD fabrics ready for dyeing to refined viscose,
+      muslin, organza and specialty qualities, we source and
+      supply fabrics selected for their quality, versatility
+      and application.
+    </p>
+
+  </div>
+
+</section>
+
+
+
+<!-- ==============================
+     FABRICS
+============================== -->
+
+<section class="section" id="fabrics">
+
+  <div class="section-heading">
+
+    <div>
+
+      <div class="eyebrow">
+        Our Collection
+      </div>
+
+      <h2>Fabrics</h2>
+
+    </div>
+
+    <p>
+      A selection of fabrics supplied by Mehar Creation.
+      Availability and specifications may vary according
+      to current sourcing requirements.
+    </p>
+
+  </div>
+
+
+
+  <div class="fabric-grid">
+
+
+    <div class="fabric-card">
+
+      <img
+        src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=1200&q=85"
+        alt="Viscose fabric">
+
+      <div class="fabric-info">
+
+        <h3>Viscose</h3>
+
+        <p>
+          Shantoon • German • Muslin • Upada • Crepe • Organza
+        </p>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="fabric-card">
+
+      <img
+        src="https://images.unsplash.com/photo-1605763240000-7e93b172d754?auto=format&fit=crop&w=1200&q=85"
+        alt="Muslin fabric">
+
+      <div class="fabric-info">
+
+        <h3>Muslin</h3>
+
+        <p>
+          Lightweight • Soft • Fluid • Versatile
+        </p>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="fabric-card">
+
+      <img
+        src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1200&q=85"
+        alt="RFD fabric">
+
+      <div class="fabric-info">
+
+        <h3>RFD Fabrics</h3>
+
+        <p>
+          Ready for Dyeing • Viscose • Polyester • Nylon
+        </p>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="fabric-card">
+
+      <img
+        src="https://images.unsplash.com/photo-1590736969955-71cc94901144?auto=format&fit=crop&w=1200&q=85"
+        alt="Specialty fabrics">
+
+      <div class="fabric-info">
+
+        <h3>Specialty Fabrics</h3>
+
+        <p>
+          Selected qualities for specific applications
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- FABRIC LIST -->
+
+  <div class="fabric-list">
+
+    <div class="fabric-item">
+      <span>01</span>
+      Viscose Shantoon
+    </div>
+
+    <div class="fabric-item">
+      <span>02</span>
+      Viscose German
+    </div>
+
+    <div class="fabric-item">
+      <span>03</span>
+      Viscose Muslin
+    </div>
+
+    <div class="fabric-item">
+      <span>04</span>
+      Viscose Muslin Bright
+    </div>
+
+    <div class="fabric-item">
+      <span>05</span>
+      Viscose Upada
+    </div>
+
+    <div class="fabric-item">
+      <span>06</span>
+      Viscose Natural Crepe
+    </div>
+
+    <div class="fabric-item">
+      <span>07</span>
+      Viscose Organza
+    </div>
+
+    <div class="fabric-item">
+      <span>08</span>
+      Premium Muslin
+    </div>
+
+    <div class="fabric-item">
+      <span>09</span>
+      Polyester Fabrics
+    </div>
+
+    <div class="fabric-item">
+      <span>10</span>
+      Nylon Fabrics
+    </div>
+
+    <div class="fabric-item">
+      <span>11</span>
+      Viscose RFD
+    </div>
+
+    <div class="fabric-item">
+      <span>12</span>
+      Polyester RFD
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- ==============================
+     ABOUT
+============================== -->
+
+<section class="about" id="about">
+
+  <div class="about-inner">
+
+    <div>
+
+      <div class="about-label">
+        About Mehar Creation
+      </div>
+
+      <h2>
+        From Surat<br>
+        to businesses<br>
+        across India.
+      </h2>
+
+    </div>
+
+
+    <div class="about-text">
+
+      <p>
+        Mehar Creation is a Surat-based textile trading and
+        sourcing company focused on supplying quality fabrics
+        to businesses across India.
+      </p>
+
+      <p>
+        We work with a network of textile manufacturers and
+        suppliers to source fabrics according to the specific
+        requirements of our customers.
+      </p>
+
+      <p>
+        Our range includes RFD fabrics, viscose qualities,
+        muslin, organza and other fabrics suitable for
+        dyeing, printing and garment manufacturing.
+      </p>
+
+      <p>
+        We believe that fabric sourcing is more than simply
+        finding a material. It is about understanding the
+        requirement, identifying the right quality and building
+        reliable long-term relationships.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- ==============================
+     EXPERTISE
+============================== -->
+
+<section class="section" id="expertise">
+
+  <div class="section-heading">
+
+    <div>
+
+      <div class="eyebrow">
+        What We Do
+      </div>
+
+      <h2>Our Expertise</h2>
+
+    </div>
+
+  </div>
+
+
+  <div class="expertise-grid">
+
+
+    <div class="expertise">
+
+      <div class="number">01</div>
+
+      <h3>Sourcing</h3>
+
+      <p>
+        We identify suitable fabric qualities based on
+        composition, construction, width, GSM and application.
+      </p>
+
+    </div>
+
+
+    <div class="expertise">
+
+      <div class="number">02</div>
+
+      <h3>Quality</h3>
+
+      <p>
+        We focus on consistent fabric quality and specifications
+        suited to the intended end use.
+      </p>
+
+    </div>
+
+
+    <div class="expertise">
+
+      <div class="number">03</div>
+
+      <h3>Requirements</h3>
+
+      <p>
+        Whether you need RFD fabric or a specific finished
+        quality, we work around your requirement.
+      </p>
+
+    </div>
+
+
+    <div class="expertise">
+
+      <div class="number">04</div>
+
+      <h3>Supply</h3>
+
+      <p>
+        Supplying textile businesses, manufacturers,
+        designers and brands across India.
+      </p>
+
+    </div>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- ==============================
+     APPLICATIONS
+============================== -->
+
+<section class="applications">
+
+  <div class="applications-inner">
+
+    <div class="eyebrow">
+      Applications
+    </div>
+
+    <h2 style="
+      font-family: Georgia, serif;
+      font-size: 50px;
+      font-weight: normal;
+    ">
+      Made for possibilities.
+    </h2>
+
+
+    <div class="application-grid">
+
+      <div class="application">
+        <h3>Women's Wear</h3>
+      </div>
+
+      <div class="application">
+        <h3>Ethnic Wear</h3>
+      </div>
+
+      <div class="application">
+        <h3>Dresses</h3>
+      </div>
+
+      <div class="application">
+        <h3>Dupattas</h3>
+      </div>
+
+      <div class="application">
+        <h3>Garments</h3>
+      </div>
+
+      <div class="application">
+        <h3>Designer Collections</h3>
+      </div>
+
+      <div class="application">
+        <h3>Dyeing</h3>
+      </div>
+
+      <div class="application">
+        <h3>Printing</h3>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- ==============================
+     JOURNAL
+============================== -->
+
+<section class="section" id="journal">
+
+  <div class="section-heading">
+
+    <div>
+
+      <div class="eyebrow">
+        Fabric Journal
+      </div>
+
+      <h2>Know Your Fabric</h2>
+
+    </div>
+
+    <p>
+      Insights into fabrics, textile qualities and the
+      materials behind modern fashion.
+    </p>
+
+  </div>
+
+
+  <div class="journal-grid">
+
+
+    <article class="journal-card">
+
+      <img
+        src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=1000&q=85"
+        alt="Fabric texture">
+
+      <small>
+        Fabric Guide
+      </small>
+
+      <h3>
+        Understanding RFD Fabrics
+      </h3>
+
+    </article>
+
+
+    <article class="journal-card">
+
+      <img
+        src="https://images.unsplash.com/photo-1566206091558-7f218b696731?auto=format&fit=crop&w=1000&q=85"
+        alt="Viscose fabric">
+
+      <small>
+        Fabric Guide
+      </small>
+
+      <h3>
+        Viscose: Feel, Drape & Versatility
+      </h3>
+
+    </article>
+
+
+    <article class="journal-card">
+
+      <img
+        src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1000&q=85"
+        alt="Fashion fabric">
+
+      <small>
+        Textile Insights
+      </small>
+
+      <h3>
+        Choosing the Right Fabric
+      </h3>
+
+    </article>
+
+
+  </div>
+
+</section>
+
+
+
+<!-- ==============================
+     CONTACT
+============================== -->
+
+<section class="contact" id="contact">
+
+  <div class="contact-inner">
+
+    <div class="eyebrow">
+      Let's Work Together
+    </div>
+
+    <h2>
+      Looking for<br>
+      a particular fabric?
+    </h2>
+
+    <p>
+      Tell us what you are looking for and we'll help
+      you find a suitable quality.
+    </p>
+
+    <a
+      href="https://wa.me/91XXXXXXXXXX"
+      class="button"
+      target="_blank"
+    >
+      Enquire on WhatsApp
+    </a>
+
+
+    <div class="contact-details">
+
+      <div>
+
+        <span>Location</span>
+
+        Surat, Gujarat, India
+
+      </div>
+
+
+      <div>
+
+        <span>Email</span>
+
+        hello@meharcreation.com
+
+      </div>
+
+
+      <div>
+
+        <span>Instagram</span>
+
+        @meharcreation.official
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- ==============================
+     FOOTER
+============================== -->
+
+<footer>
+
+  <div class="footer-inner">
+
+    <div class="logo">
+
+      MEHAR CREATION
+
+      <span>TEXTILES • SOURCING • QUALITY</span>
+
+    </div>
+
+
+    <p>
+      © 2026 Mehar Creation. All rights reserved.
+    </p>
+
+  </div>
+
+</footer>
+
+
+
+<!-- ==============================
+     WHATSAPP BUTTON
+============================== -->
+
+<a
+  href="https://wa.me/919953414166"
+  class="whatsapp"
+  target="_blank"
+  aria-label="WhatsApp"
+>
+  WA
+</a>
+
+
+</body>
+</html>
