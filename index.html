@@ -399,7 +399,7 @@
 
 
     /* ==============================
-       FABRIC LISTS
+       FABRIC ACCORDION LISTS
     ============================== */
 
     .fabric-lists {
@@ -409,7 +409,7 @@
     .fabric-category {
       scroll-margin-top: 110px;
 
-      margin-bottom: 70px;
+      margin-bottom: 15px;
 
       border-top: 1px solid var(--border);
     }
@@ -417,13 +417,21 @@
     .fabric-category-heading {
       display: flex;
 
-      align-items: baseline;
+      align-items: center;
 
       justify-content: space-between;
 
-      padding: 28px 10px;
+      padding: 30px 15px;
 
       border-bottom: 1px solid var(--border);
+
+      cursor: pointer;
+
+      transition: 0.3s ease;
+    }
+
+    .fabric-category-heading:hover {
+      background: rgba(155, 128, 99, 0.06);
     }
 
     .fabric-category-heading h3 {
@@ -432,6 +440,12 @@
       font-size: 34px;
 
       font-weight: normal;
+
+      transition: 0.3s ease;
+    }
+
+    .fabric-category-heading:hover h3 {
+      color: var(--accent);
     }
 
     .fabric-category-heading span {
@@ -442,13 +456,81 @@
       letter-spacing: 3px;
 
       text-transform: uppercase;
+
+      margin-left: auto;
+
+      margin-right: 25px;
     }
+
+
+    /* ==============================
+       ACCORDION PLUS / MINUS
+    ============================== */
+
+    .fabric-category-heading::after {
+      content: "+";
+
+      font-family: Arial, sans-serif;
+
+      font-size: 25px;
+
+      font-weight: 300;
+
+      color: var(--accent);
+
+      width: 25px;
+
+      text-align: center;
+
+      transition: 0.3s ease;
+    }
+
+    .fabric-category.active
+    .fabric-category-heading::after {
+      content: "−";
+    }
+
+    .fabric-category.active
+    .fabric-category-heading {
+      background: rgba(155, 128, 99, 0.04);
+    }
+
+    .fabric-category.active
+    .fabric-category-heading h3 {
+      color: var(--accent);
+    }
+
+
+    /* ==============================
+       HIDDEN FABRIC LIST
+    ============================== */
 
     .fabric-list {
       display: grid;
 
       grid-template-columns: repeat(3, 1fr);
+
+      max-height: 0;
+
+      overflow: hidden;
+
+      opacity: 0;
+
+      transition:
+        max-height 0.5s ease,
+        opacity 0.4s ease;
     }
+
+    .fabric-category.active .fabric-list {
+      max-height: 600px;
+
+      opacity: 1;
+    }
+
+
+    /* ==============================
+       FABRIC ITEMS
+    ============================== */
 
     .fabric-item {
       padding: 25px 10px;
@@ -935,19 +1017,37 @@
         height: 450px;
       }
 
+
+      /* MOBILE ACCORDION */
+
       .fabric-category-heading {
-        display: block;
+        padding: 25px 10px;
+      }
+
+      .fabric-category-heading h3 {
+        font-size: 28px;
       }
 
       .fabric-category-heading span {
-        display: block;
+        display: none;
+      }
 
-        margin-top: 8px;
+      .fabric-category-heading::after {
+        margin-left: auto;
       }
 
       .fabric-list {
         grid-template-columns: 1fr 1fr;
       }
+
+      .fabric-item {
+        padding: 20px 10px;
+
+        font-size: 17px;
+      }
+
+
+      /* ABOUT */
 
       .about-inner {
         grid-template-columns: 1fr;
@@ -961,6 +1061,9 @@
         font-size: 48px;
       }
 
+
+      /* EXPERTISE */
+
       .expertise-grid {
         grid-template-columns: 1fr 1fr;
       }
@@ -969,19 +1072,31 @@
         border-bottom: 1px solid var(--border);
       }
 
+
+      /* APPLICATIONS */
+
       .application-grid {
         grid-template-columns: 1fr 1fr;
       }
 
+
+      /* JOURNAL */
+
       .journal-grid {
         grid-template-columns: 1fr;
       }
+
+
+      /* CONTACT */
 
       .contact-details {
         flex-direction: column;
 
         gap: 25px;
       }
+
+
+      /* FOOTER */
 
       .footer-inner {
         flex-direction: column;
@@ -990,6 +1105,9 @@
 
         text-align: center;
       }
+
+
+      /* FLOATING BUTTONS */
 
       .whatsapp,
       .instagram {
@@ -1134,6 +1252,7 @@
   </div>
 
 
+
   <!-- ==============================
        FABRIC CATEGORY CARDS
   ============================== -->
@@ -1248,13 +1367,15 @@
 
 
   <!-- ==============================
-       FABRIC LISTS
+       FABRIC ACCORDION LISTS
   ============================== -->
 
   <div class="fabric-lists">
 
 
-    <!-- VISCOSE -->
+    <!-- ==============================
+         VISCOSE
+    ============================== -->
 
     <div class="fabric-category" id="viscose">
 
@@ -1265,6 +1386,7 @@
         <span>Our Viscose Collection</span>
 
       </div>
+
 
       <div class="fabric-list">
 
@@ -1310,7 +1432,9 @@
 
 
 
-    <!-- POLYESTER -->
+    <!-- ==============================
+         POLYESTER
+    ============================== -->
 
     <div class="fabric-category" id="polyester">
 
@@ -1321,6 +1445,7 @@
         <span>Our Polyester Collection</span>
 
       </div>
+
 
       <div class="fabric-list">
 
@@ -1350,7 +1475,9 @@
 
 
 
-    <!-- NYLON -->
+    <!-- ==============================
+         NYLON
+    ============================== -->
 
     <div class="fabric-category" id="nylon">
 
@@ -1361,6 +1488,7 @@
         <span>Our Nylon Collection</span>
 
       </div>
+
 
       <div class="fabric-list">
 
@@ -1394,7 +1522,9 @@
 
 
 
-    <!-- BLENDS -->
+    <!-- ==============================
+         BLENDS
+    ============================== -->
 
     <div class="fabric-category" id="blends">
 
@@ -1405,6 +1535,7 @@
         <span>Our Blended Collection</span>
 
       </div>
+
 
       <div class="fabric-list">
 
@@ -1763,7 +1894,8 @@
         <span>Location</span>
 
         3704-05, Radha Krishna Textile Market,
-	<br>Ring Road, Surat, Gujarat, India
+        <br>
+        Ring Road, Surat, Gujarat, India
 
       </div>
 
@@ -1910,6 +2042,127 @@
   </svg>
 
 </a>
+
+
+
+<!-- ==============================
+     FABRIC ACCORDION JAVASCRIPT
+============================== -->
+
+<script>
+
+  const fabricCategories =
+    document.querySelectorAll(".fabric-category");
+
+
+  /* ==============================
+     ACCORDION HEADINGS
+  ============================== */
+
+  fabricCategories.forEach(category => {
+
+    const heading =
+      category.querySelector(".fabric-category-heading");
+
+
+    heading.addEventListener("click", () => {
+
+      const isOpen =
+        category.classList.contains("active");
+
+
+      /*
+        Close every category first.
+        This keeps the section clean and
+        allows only one list to remain open.
+      */
+
+      fabricCategories.forEach(item => {
+
+        item.classList.remove("active");
+
+      });
+
+
+      /*
+        If the clicked category was closed,
+        open it.
+      */
+
+      if (!isOpen) {
+
+        category.classList.add("active");
+
+      }
+
+    });
+
+  });
+
+
+
+  /* ==============================
+     FABRIC CARD LINKS
+  ============================== */
+
+  document.querySelectorAll(".fabric-card").forEach(card => {
+
+    card.addEventListener("click", function(e) {
+
+      const targetId =
+        this.getAttribute("href");
+
+      const target =
+        document.querySelector(targetId);
+
+
+      if (target) {
+
+        e.preventDefault();
+
+
+        /*
+          Close all categories
+        */
+
+        fabricCategories.forEach(item => {
+
+          item.classList.remove("active");
+
+        });
+
+
+        /*
+          Open selected category
+        */
+
+        target.classList.add("active");
+
+
+        /*
+          Smooth scroll to selected
+          fabric category
+        */
+
+        setTimeout(() => {
+
+          target.scrollIntoView({
+
+            behavior: "smooth",
+
+            block: "start"
+
+          });
+
+        }, 100);
+
+      }
+
+    });
+
+  });
+
+</script>
 
 
 </body>
