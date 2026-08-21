@@ -9,12 +9,13 @@
   <title>Mehar Creation | Fine Fabrics & Textile Sourcing</title>
 
   <meta name="description"
-        content="Mehar Creation is a Surat-based textile sourcing and fabric trading company supplying quality fabrics across India.">
+        content="Mehar Creation is a Surat-based textile sourcing and fabric trading company supplying quality viscose, polyester, nylon, blends and specialty fabrics across India.">
 
   <meta name="keywords"
-        content="Mehar Creation, textile supplier Surat, fabric supplier India, RFD fabric, viscose fabric, polyester fabric, nylon fabric, textile sourcing">
+        content="Mehar Creation, textile supplier Surat, fabric supplier India, viscose fabric, polyester fabric, nylon fabric, textile sourcing">
 
   <meta name="author" content="Mehar Creation">
+
 
   <style>
 
@@ -278,7 +279,7 @@
 
 
     /* ==============================
-       FABRIC GRID
+       FABRIC CARDS
     ============================== */
 
     .fabric-grid {
@@ -298,11 +299,12 @@
       background: var(--beige);
 
       cursor: pointer;
+
+      display: block;
     }
 
     .fabric-card img {
-      height: 100%;
-      min-height: 500px;
+      height: 500px;
 
       object-fit: cover;
 
@@ -311,6 +313,22 @@
 
     .fabric-card:hover img {
       transform: scale(1.04);
+    }
+
+    .fabric-card::after {
+      content: "";
+
+      position: absolute;
+
+      inset: 0;
+
+      background: linear-gradient(
+        to bottom,
+        transparent 45%,
+        rgba(0,0,0,0.72)
+      );
+
+      pointer-events: none;
     }
 
     .fabric-info {
@@ -323,108 +341,131 @@
 
       padding: 35px;
 
-      background: linear-gradient(
-        transparent,
-        rgba(0,0,0,0.65)
-      );
-
       color: white;
+
+      z-index: 2;
     }
 
     .fabric-info h3 {
       font-family: Georgia, serif;
+
       font-size: 32px;
+
       font-weight: normal;
     }
 
     .fabric-info p {
       font-size: 12px;
+
       letter-spacing: 1px;
+
       opacity: 0.85;
+
       margin-top: 5px;
+    }
+
+    .fabric-card .view-text {
+      position: absolute;
+
+      top: 25px;
+      right: 25px;
+
+      z-index: 3;
+
+      padding: 9px 14px;
+
+      border: 1px solid rgba(255,255,255,0.6);
+
+      color: white;
+
+      font-size: 9px;
+
+      letter-spacing: 2px;
+
+      text-transform: uppercase;
+
+      opacity: 0;
+
+      transform: translateY(-5px);
+
+      transition: 0.3s;
+    }
+
+    .fabric-card:hover .view-text {
+      opacity: 1;
+
+      transform: translateY(0);
     }
 
 
     /* ==============================
-       FABRIC DROPDOWN
+       FABRIC LISTS
     ============================== */
 
-    .fabric-dropdown {
-      margin-top: 60px;
+    .fabric-lists {
+      margin-top: 80px;
+    }
+
+    .fabric-category {
+      scroll-margin-top: 110px;
+
+      margin-bottom: 70px;
 
       border-top: 1px solid var(--border);
     }
 
-    .fabric-category {
-      border-bottom: 1px solid var(--border);
-    }
-
-    .fabric-category summary {
-      list-style: none;
-
-      cursor: pointer;
-
-      padding: 25px 10px;
-
-      font-family: Georgia, serif;
-
-      font-size: 22px;
-
+    .fabric-category-heading {
       display: flex;
+
+      align-items: baseline;
 
       justify-content: space-between;
 
-      align-items: center;
+      padding: 28px 10px;
 
-      transition: 0.3s;
+      border-bottom: 1px solid var(--border);
     }
 
-    .fabric-category summary::-webkit-details-marker {
-      display: none;
+    .fabric-category-heading h3 {
+      font-family: Georgia, serif;
+
+      font-size: 34px;
+
+      font-weight: normal;
     }
 
-    .fabric-category summary:hover {
-      color: var(--accent);
-    }
-
-    .fabric-category summary::after {
-      content: "+";
-
-      font-family: Arial, sans-serif;
-
-      font-size: 22px;
-
+    .fabric-category-heading span {
       color: var(--accent);
 
-      transition: 0.3s;
+      font-size: 10px;
+
+      letter-spacing: 3px;
+
+      text-transform: uppercase;
     }
 
-    .fabric-category[open] summary::after {
-      content: "−";
-    }
-
-    .fabric-category[open] summary {
-      color: var(--accent);
-    }
-
-    .fabric-items {
+    .fabric-list {
       display: grid;
 
       grid-template-columns: repeat(3, 1fr);
-
-      padding: 0 10px 30px;
-
-      gap: 0 30px;
     }
 
     .fabric-item {
-      padding: 18px 0;
+      padding: 25px 10px;
 
       border-bottom: 1px solid var(--border);
 
       font-family: Georgia, serif;
 
-      font-size: 18px;
+      font-size: 19px;
+
+      transition: 0.3s;
+    }
+
+    .fabric-item:hover {
+      color: var(--accent);
+
+      padding-left: 15px;
     }
 
 
@@ -434,11 +475,13 @@
 
     .about {
       background: var(--dark);
+
       color: white;
     }
 
     .about-inner {
       max-width: 1250px;
+
       margin: auto;
 
       padding: 130px 30px;
@@ -542,6 +585,7 @@
 
     .applications-inner {
       max-width: 1250px;
+
       margin: auto;
     }
 
@@ -567,6 +611,7 @@
 
     .application:hover {
       transform: translateY(-5px);
+
       background: white;
     }
 
@@ -638,6 +683,7 @@
 
     .contact-inner {
       max-width: 1000px;
+
       margin: auto;
 
       text-align: center;
@@ -716,6 +762,7 @@
 
     .footer-inner {
       max-width: 1250px;
+
       margin: auto;
 
       display: flex;
@@ -744,9 +791,11 @@
       position: fixed;
 
       right: 25px;
+
       bottom: 25px;
 
       width: 55px;
+
       height: 55px;
 
       border-radius: 50%;
@@ -770,12 +819,15 @@
 
     .whatsapp:hover {
       transform: translateY(-4px);
+
       background: #806c55;
     }
 
     .whatsapp svg {
       width: 25px;
+
       height: 25px;
+
       fill: currentColor;
     }
 
@@ -788,9 +840,11 @@
       position: fixed;
 
       right: 25px;
+
       bottom: 95px;
 
       width: 55px;
+
       height: 55px;
 
       border-radius: 50%;
@@ -814,11 +868,13 @@
 
     .instagram:hover {
       transform: translateY(-4px);
+
       background: #806c55;
     }
 
     .instagram svg {
       width: 25px;
+
       height: 25px;
 
       fill: none;
@@ -876,11 +932,21 @@
       }
 
       .fabric-card img {
-        min-height: 450px;
+        height: 450px;
       }
 
-      .fabric-items {
-        grid-template-columns: 1fr;
+      .fabric-category-heading {
+        display: block;
+      }
+
+      .fabric-category-heading span {
+        display: block;
+
+        margin-top: 8px;
+      }
+
+      .fabric-list {
+        grid-template-columns: 1fr 1fr;
       }
 
       .about-inner {
@@ -1030,10 +1096,9 @@
     </h2>
 
     <p>
-      From RFD fabrics ready for dyeing to refined viscose,
-      polyester, nylon, blends and specialty qualities, we source
-      and supply fabrics selected for their quality, versatility
-      and application.
+      From quality viscose and polyester to nylon, blends and
+      specialty fabrics, we source and supply fabrics selected
+      for their quality, versatility and application.
     </p>
 
   </div>
@@ -1069,134 +1134,139 @@
   </div>
 
 
-
-  <!-- FABRIC COLLECTION -->
+  <!-- ==============================
+       FABRIC CATEGORY CARDS
+  ============================== -->
 
   <div class="fabric-grid">
 
 
     <!-- VISCOSE -->
 
-    <details class="fabric-card">
+    <a href="#viscose" class="fabric-card">
 
-      <summary>
+      <img
+        src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=1200&q=85"
+        alt="Viscose fabric">
 
-        <img
-          src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=1200&q=85"
-          alt="Viscose fabric">
+      <div class="view-text">
+        View Collection
+      </div>
 
-        <div class="fabric-info">
+      <div class="fabric-info">
 
-          <h3>Viscose</h3>
+        <h3>Viscose</h3>
 
-          <p>
-            Shantoon • German • Muslin • Upada • Crepe • Organza
-          </p>
+        <p>
+          Shantoon • German • Muslin • Upada • Crepe • Organza
+        </p>
 
-        </div>
+      </div>
 
-      </summary>
-
-    </details>
+    </a>
 
 
 
     <!-- POLYESTER -->
 
-    <details class="fabric-card">
+    <a href="#polyester" class="fabric-card">
 
-      <summary>
+      <img
+        src="https://images.unsplash.com/photo-1605763240000-7e93b172d754?auto=format&fit=crop&w=1200&q=85"
+        alt="Polyester fabric">
 
-        <img
-          src="https://images.unsplash.com/photo-1605763240000-7e93b172d754?auto=format&fit=crop&w=1200&q=85"
-          alt="Polyester fabric">
+      <div class="view-text">
+        View Collection
+      </div>
 
-        <div class="fabric-info">
+      <div class="fabric-info">
 
-          <h3>Polyester</h3>
+        <h3>Polyester</h3>
 
-          <p>
-            Rayon • Muslin • Taffeta • Satin • Japan Crepe
-          </p>
+        <p>
+          Rayon • Muslin • Taffeta • Satin • Japan Crepe
+        </p>
 
-        </div>
+      </div>
 
-      </summary>
-
-    </details>
+    </a>
 
 
 
     <!-- NYLON -->
 
-    <details class="fabric-card">
+    <a href="#nylon" class="fabric-card">
 
-      <summary>
+      <img
+        src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1200&q=85"
+        alt="Nylon fabric">
 
-        <img
-          src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1200&q=85"
-          alt="Nylon fabric">
+      <div class="view-text">
+        View Collection
+      </div>
 
-        <div class="fabric-info">
+      <div class="fabric-info">
 
-          <h3>Nylon</h3>
+        <h3>Nylon</h3>
 
-          <p>
-            Sofia • Nazneen • Dhupion • Organza • Shimmer • Chinon
-          </p>
+        <p>
+          Sofia • Nazneen • Dhupion • Organza • Shimmer • Chinon
+        </p>
 
-        </div>
+      </div>
 
-      </summary>
-
-    </details>
+    </a>
 
 
 
     <!-- BLENDS -->
 
-    <details class="fabric-card">
+    <a href="#blends" class="fabric-card">
 
-      <summary>
+      <img
+        src="https://images.unsplash.com/photo-1590736969955-71cc94901144?auto=format&fit=crop&w=1200&q=85"
+        alt="Blended fabrics">
 
-        <img
-          src="https://images.unsplash.com/photo-1590736969955-71cc94901144?auto=format&fit=crop&w=1200&q=85"
-          alt="Blended fabrics">
+      <div class="view-text">
+        View Collection
+      </div>
 
-        <div class="fabric-info">
+      <div class="fabric-info">
 
-          <h3>Blends</h3>
+        <h3>Blends</h3>
 
-          <p>
-            PST • Vatican
-          </p>
+        <p>
+          PST • Vatican
+        </p>
 
-        </div>
+      </div>
 
-      </summary>
-
-    </details>
+    </a>
 
   </div>
 
 
 
   <!-- ==============================
-       FABRIC DROP-DOWN LIST
+       FABRIC LISTS
   ============================== -->
 
-  <div class="fabric-dropdown">
+  <div class="fabric-lists">
 
 
     <!-- VISCOSE -->
 
-    <details class="fabric-category">
+    <div class="fabric-category" id="viscose">
 
-      <summary>
-        Viscose
-      </summary>
+      <div class="fabric-category-heading">
 
-      <div class="fabric-items">
+        <h3>Viscose</h3>
+
+        <span>Our Viscose Collection</span>
+
+      </div>
+
+      <div class="fabric-list">
 
         <div class="fabric-item">
           Viscose Shantoon
@@ -1236,19 +1306,23 @@
 
       </div>
 
-    </details>
+    </div>
 
 
 
     <!-- POLYESTER -->
 
-    <details class="fabric-category">
+    <div class="fabric-category" id="polyester">
 
-      <summary>
-        Polyester
-      </summary>
+      <div class="fabric-category-heading">
 
-      <div class="fabric-items">
+        <h3>Polyester</h3>
+
+        <span>Our Polyester Collection</span>
+
+      </div>
+
+      <div class="fabric-list">
 
         <div class="fabric-item">
           Rayon
@@ -1272,19 +1346,23 @@
 
       </div>
 
-    </details>
+    </div>
 
 
 
     <!-- NYLON -->
 
-    <details class="fabric-category">
+    <div class="fabric-category" id="nylon">
 
-      <summary>
-        Nylon
-      </summary>
+      <div class="fabric-category-heading">
 
-      <div class="fabric-items">
+        <h3>Nylon</h3>
+
+        <span>Our Nylon Collection</span>
+
+      </div>
+
+      <div class="fabric-list">
 
         <div class="fabric-item">
           Sofia
@@ -1312,19 +1390,23 @@
 
       </div>
 
-    </details>
+    </div>
 
 
 
     <!-- BLENDS -->
 
-    <details class="fabric-category">
+    <div class="fabric-category" id="blends">
 
-      <summary>
-        Blends
-      </summary>
+      <div class="fabric-category-heading">
 
-      <div class="fabric-items">
+        <h3>Blends</h3>
+
+        <span>Our Blended Collection</span>
+
+      </div>
+
+      <div class="fabric-list">
 
         <div class="fabric-item">
           PST
@@ -1336,7 +1418,7 @@
 
       </div>
 
-    </details>
+    </div>
 
 
   </div>
@@ -1592,7 +1674,7 @@
       </small>
 
       <h3>
-        Understanding RFD Fabrics
+        Understanding Fabric Qualities
       </h3>
 
     </article>
@@ -1660,6 +1742,7 @@
       you find a suitable quality.
     </p>
 
+
     <a
       href="https://wa.me/919953414166"
       class="button"
@@ -1674,13 +1757,14 @@
 
     <div class="contact-details">
 
+
       <div>
 
         <span>Location</span>
-	
-        3704-05, Radha Krishna Textile Market,<br> 
-	Ring Road, Surat, Gujarat, India
-	
+
+        3704-05, Radha Krishna Textile Market,
+	<br>Ring Road, Surat, Gujarat, India
+
       </div>
 
 
@@ -1719,6 +1803,7 @@
         </a>
 
       </div>
+
 
     </div>
 
