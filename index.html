@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
 
+<head>
   <meta charset="UTF-8">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,1044 +9,930 @@
   <title>Mehar Creation | Fine Fabrics & Textile Sourcing</title>
 
   <meta name="description"
-        content="Mehar Creation is a Surat-based textile sourcing and fabric trading company supplying quality RFD, viscose, polyester, nylon, muslin, organza and specialty fabrics across India.">
+        content="Mehar Creation is a Surat-based textile sourcing and fabric trading company supplying quality fabrics across India.">
 
   <meta name="keywords"
-        content="Mehar Creation, textile supplier Surat, fabric supplier India, RFD fabric, viscose fabric, polyester fabric, nylon fabric, muslin fabric, textile sourcing">
+        content="Mehar Creation, textile supplier Surat, fabric supplier India, RFD fabric, viscose fabric, polyester fabric, nylon fabric, textile sourcing">
 
   <meta name="author" content="Mehar Creation">
 
+  <style>
+
+    /* ==============================
+       RESET
+    ============================== */
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f4ee;
+      color: #292722;
+      line-height: 1.6;
+    }
+
+    img {
+      width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+
+    /* ==============================
+       VARIABLES
+    ============================== */
+
+    :root {
+      --cream: #f7f4ee;
+      --ivory: #fbfaf7;
+      --beige: #e7dfd1;
+      --dark: #292722;
+      --muted: #777168;
+      --border: #ddd5c8;
+      --accent: #9b8063;
+    }
+
+
+    /* ==============================
+       HEADER
+    ============================== */
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+
+      background: rgba(247, 244, 238, 0.94);
+      backdrop-filter: blur(10px);
+
+      border-bottom: 1px solid rgba(0,0,0,0.06);
+    }
+
+    .nav {
+      max-width: 1250px;
+      margin: auto;
+
+      padding: 20px 30px;
 
-<style>
-
-/* =========================================================
-   RESET
-========================================================= */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
 
-html {
-  scroll-behavior: smooth;
-}
+    .logo {
+      font-family: Georgia, serif;
+      font-size: 24px;
+      letter-spacing: 3px;
+      font-weight: normal;
+    }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: #f7f4ee;
-  color: #292722;
-  line-height: 1.6;
-}
+    .logo span {
+      display: block;
+      font-family: Arial, sans-serif;
+      font-size: 9px;
+      letter-spacing: 4px;
+      margin-top: 3px;
+      color: var(--muted);
+    }
 
-img {
-  width: 100%;
-  display: block;
-}
+    nav {
+      display: flex;
+      gap: 32px;
+    }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+    nav a {
+      font-size: 12px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #514d46;
+      transition: 0.3s;
+    }
 
+    nav a:hover {
+      color: var(--accent);
+    }
 
-/* =========================================================
-   VARIABLES
-========================================================= */
 
-:root {
-  --cream: #f7f4ee;
-  --ivory: #fbfaf7;
-  --beige: #e7dfd1;
-  --dark: #292722;
-  --muted: #777168;
-  --border: #ddd5c8;
-  --accent: #9b8063;
-}
+    /* ==============================
+       HERO
+    ============================== */
 
+    .hero {
+      min-height: 100vh;
 
-/* =========================================================
-   HEADER
-========================================================= */
+      display: grid;
+      grid-template-columns: 1fr 1fr;
 
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
+      padding-top: 80px;
+    }
 
-  background: rgba(247, 244, 238, 0.94);
-  backdrop-filter: blur(10px);
+    .hero-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
 
-  border-bottom: 1px solid rgba(0,0,0,0.06);
-}
+      padding: 80px;
+    }
 
-.nav {
-  max-width: 1250px;
-  margin: auto;
+    .eyebrow {
+      font-size: 11px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--accent);
 
-  padding: 20px 30px;
+      margin-bottom: 25px;
+    }
 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+    .hero h1 {
+      font-family: Georgia, serif;
+      font-weight: normal;
 
-.logo {
-  font-family: Georgia, serif;
-  font-size: 24px;
-  letter-spacing: 3px;
-  font-weight: normal;
-}
+      font-size: clamp(48px, 6vw, 88px);
 
-.logo span {
-  display: block;
+      line-height: 1.02;
 
-  font-family: Arial, sans-serif;
+      margin-bottom: 30px;
+    }
 
-  font-size: 9px;
-  letter-spacing: 4px;
+    .hero p {
+      max-width: 500px;
 
-  margin-top: 3px;
+      font-size: 16px;
+      color: var(--muted);
 
-  color: var(--muted);
-}
+      margin-bottom: 40px;
+    }
 
-nav {
-  display: flex;
-  gap: 32px;
-}
+    .button {
+      display: inline-block;
 
-nav a {
-  font-size: 12px;
-  letter-spacing: 1.5px;
+      width: fit-content;
 
-  text-transform: uppercase;
+      padding: 15px 28px;
 
-  color: #514d46;
+      background: var(--dark);
+      color: white;
 
-  transition: 0.3s;
-}
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
 
-nav a:hover {
-  color: var(--accent);
-}
+      transition: 0.3s;
+    }
 
+    .button:hover {
+      background: var(--accent);
+    }
 
-/* =========================================================
-   HERO
-========================================================= */
+    .hero-image {
+      min-height: 100%;
 
-.hero {
-  min-height: 100vh;
+      background-image:
+        url("https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=1400&q=85");
 
-  display: grid;
+      background-size: cover;
+      background-position: center;
+    }
 
-  grid-template-columns: 1fr 1fr;
 
-  padding-top: 80px;
-}
+    /* ==============================
+       INTRO
+    ============================== */
 
-.hero-text {
-  display: flex;
+    .intro {
+      padding: 130px 30px;
 
-  flex-direction: column;
+      background: var(--ivory);
 
-  justify-content: center;
+      text-align: center;
+    }
 
-  padding: 80px;
-}
+    .intro-inner {
+      max-width: 850px;
+      margin: auto;
+    }
 
-.eyebrow {
-  font-size: 11px;
+    .intro h2 {
+      font-family: Georgia, serif;
+      font-weight: normal;
 
-  letter-spacing: 4px;
+      font-size: clamp(36px, 5vw, 60px);
 
-  text-transform: uppercase;
+      line-height: 1.15;
 
-  color: var(--accent);
+      margin-bottom: 30px;
+    }
 
-  margin-bottom: 25px;
-}
+    .intro p {
+      font-size: 16px;
+      color: var(--muted);
+      max-width: 700px;
+      margin: auto;
+    }
 
-.hero h1 {
-  font-family: Georgia, serif;
 
-  font-weight: normal;
+    /* ==============================
+       SECTIONS
+    ============================== */
 
-  font-size: clamp(48px, 6vw, 88px);
+    .section {
+      max-width: 1250px;
+      margin: auto;
 
-  line-height: 1.02;
+      padding: 120px 30px;
+    }
 
-  margin-bottom: 30px;
-}
+    .section-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
 
-.hero p {
-  max-width: 500px;
+      margin-bottom: 60px;
+    }
 
-  font-size: 16px;
+    .section-heading h2 {
+      font-family: Georgia, serif;
+      font-size: 52px;
+      font-weight: normal;
+    }
 
-  color: var(--muted);
+    .section-heading p {
+      max-width: 400px;
+      color: var(--muted);
+      font-size: 14px;
+    }
 
-  margin-bottom: 40px;
-}
 
-.button {
-  display: inline-block;
+    /* ==============================
+       FABRIC GRID
+    ============================== */
 
-  width: fit-content;
+    .fabric-grid {
+      display: grid;
 
-  padding: 15px 28px;
+      grid-template-columns: repeat(2, 1fr);
 
-  background: var(--dark);
+      gap: 25px;
+    }
 
-  color: white;
+    .fabric-card {
+      position: relative;
+      overflow: hidden;
 
-  font-size: 11px;
+      min-height: 500px;
 
-  letter-spacing: 2px;
+      background: var(--beige);
 
-  text-transform: uppercase;
+      cursor: pointer;
+    }
 
-  transition: 0.3s;
-}
+    .fabric-card img {
+      height: 100%;
+      min-height: 500px;
 
-.button:hover {
-  background: var(--accent);
-}
+      object-fit: cover;
 
-.hero-image {
-  min-height: 100%;
+      transition: transform 0.7s ease;
+    }
 
-  background-image:
-    url("https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=1400&q=85");
+    .fabric-card:hover img {
+      transform: scale(1.04);
+    }
 
-  background-size: cover;
+    .fabric-info {
+      position: absolute;
 
-  background-position: center;
-}
+      bottom: 0;
+      left: 0;
 
+      width: 100%;
 
-/* =========================================================
-   INTRO
-========================================================= */
+      padding: 35px;
 
-.intro {
-  padding: 130px 30px;
+      background: linear-gradient(
+        transparent,
+        rgba(0,0,0,0.65)
+      );
 
-  background: var(--ivory);
+      color: white;
+    }
 
-  text-align: center;
-}
+    .fabric-info h3 {
+      font-family: Georgia, serif;
+      font-size: 32px;
+      font-weight: normal;
+    }
 
-.intro-inner {
-  max-width: 850px;
+    .fabric-info p {
+      font-size: 12px;
+      letter-spacing: 1px;
+      opacity: 0.85;
+      margin-top: 5px;
+    }
 
-  margin: auto;
-}
 
-.intro h2 {
-  font-family: Georgia, serif;
+    /* ==============================
+       FABRIC DROPDOWN
+    ============================== */
 
-  font-weight: normal;
+    .fabric-dropdown {
+      margin-top: 60px;
 
-  font-size: clamp(36px, 5vw, 60px);
+      border-top: 1px solid var(--border);
+    }
 
-  line-height: 1.15;
+    .fabric-category {
+      border-bottom: 1px solid var(--border);
+    }
 
-  margin-bottom: 30px;
-}
+    .fabric-category summary {
+      list-style: none;
 
-.intro p {
-  font-size: 16px;
+      cursor: pointer;
 
-  color: var(--muted);
+      padding: 25px 10px;
 
-  max-width: 700px;
+      font-family: Georgia, serif;
 
-  margin: auto;
-}
+      font-size: 22px;
 
+      display: flex;
 
-/* =========================================================
-   GENERAL SECTION
-========================================================= */
+      justify-content: space-between;
 
-.section {
-  max-width: 1250px;
+      align-items: center;
 
-  margin: auto;
+      transition: 0.3s;
+    }
 
-  padding: 120px 30px;
-}
+    .fabric-category summary::-webkit-details-marker {
+      display: none;
+    }
 
-.section-heading {
-  display: flex;
+    .fabric-category summary:hover {
+      color: var(--accent);
+    }
 
-  justify-content: space-between;
+    .fabric-category summary::after {
+      content: "+";
 
-  align-items: end;
+      font-family: Arial, sans-serif;
 
-  margin-bottom: 60px;
-}
+      font-size: 22px;
 
-.section-heading h2 {
-  font-family: Georgia, serif;
+      color: var(--accent);
 
-  font-size: 52px;
+      transition: 0.3s;
+    }
 
-  font-weight: normal;
-}
+    .fabric-category[open] summary::after {
+      content: "−";
+    }
 
-.section-heading p {
-  max-width: 400px;
+    .fabric-category[open] summary {
+      color: var(--accent);
+    }
 
-  color: var(--muted);
+    .fabric-items {
+      display: grid;
 
-  font-size: 14px;
-}
+      grid-template-columns: repeat(3, 1fr);
 
+      padding: 0 10px 30px;
 
-/* =========================================================
-   FABRIC CATEGORY GRID
-========================================================= */
+      gap: 0 30px;
+    }
 
-.fabric-grid {
-  display: grid;
+    .fabric-item {
+      padding: 18px 0;
 
-  grid-template-columns: repeat(2, 1fr);
+      border-bottom: 1px solid var(--border);
 
-  gap: 25px;
-}
+      font-family: Georgia, serif;
 
-.fabric-card {
-  position: relative;
+      font-size: 18px;
+    }
 
-  overflow: hidden;
 
-  min-height: 500px;
+    /* ==============================
+       ABOUT
+    ============================== */
 
-  background: var(--beige);
+    .about {
+      background: var(--dark);
+      color: white;
+    }
 
-  cursor: pointer;
+    .about-inner {
+      max-width: 1250px;
+      margin: auto;
 
-  border: 2px solid transparent;
+      padding: 130px 30px;
 
-  transition: 0.4s ease;
-}
+      display: grid;
 
-.fabric-card img {
-  height: 100%;
+      grid-template-columns: 1fr 1fr;
 
-  min-height: 500px;
+      gap: 100px;
+    }
 
-  object-fit: cover;
+    .about h2 {
+      font-family: Georgia, serif;
 
-  transition: transform 0.7s ease;
-}
+      font-size: 60px;
 
-.fabric-card:hover img {
-  transform: scale(1.04);
-}
+      font-weight: normal;
 
-.fabric-card:hover {
-  border-color: rgba(155,128,99,0.7);
-}
+      line-height: 1.05;
+    }
 
-.fabric-card.active {
-  border-color: var(--accent);
-}
+    .about-text p {
+      color: #c5c0b7;
 
-.fabric-info {
-  position: absolute;
+      margin-bottom: 25px;
 
-  bottom: 0;
-  left: 0;
+      font-size: 15px;
+    }
 
-  width: 100%;
+    .about-label {
+      color: #b49779;
 
-  padding: 35px;
+      font-size: 10px;
 
-  background: linear-gradient(
-    transparent,
-    rgba(0,0,0,0.7)
-  );
+      letter-spacing: 3px;
 
-  color: white;
-}
+      text-transform: uppercase;
 
-.fabric-info h3 {
-  font-family: Georgia, serif;
+      margin-bottom: 20px;
+    }
 
-  font-size: 32px;
 
-  font-weight: normal;
-}
+    /* ==============================
+       EXPERTISE
+    ============================== */
 
-.fabric-info p {
-  font-size: 12px;
+    .expertise-grid {
+      display: grid;
 
-  letter-spacing: 1px;
+      grid-template-columns: repeat(4, 1fr);
 
-  opacity: 0.85;
+      border-top: 1px solid var(--border);
+    }
 
-  margin-top: 5px;
-}
+    .expertise {
+      padding: 40px 25px;
 
+      border-right: 1px solid var(--border);
+    }
 
-/* =========================================================
-   FABRIC TABS
-========================================================= */
+    .expertise:last-child {
+      border-right: none;
+    }
 
-.fabric-tabs {
-  display: flex;
+    .number {
+      font-family: Georgia, serif;
 
-  justify-content: center;
+      font-size: 28px;
 
-  gap: 0;
+      color: var(--accent);
 
-  margin-top: 80px;
+      margin-bottom: 25px;
+    }
 
-  border-top: 1px solid var(--border);
+    .expertise h3 {
+      font-family: Georgia, serif;
 
-  border-bottom: 1px solid var(--border);
+      font-weight: normal;
 
-  flex-wrap: wrap;
-}
+      font-size: 23px;
 
-.fabric-tab {
-  position: relative;
+      margin-bottom: 15px;
+    }
 
-  padding: 22px 40px;
+    .expertise p {
+      color: var(--muted);
 
-  background: transparent;
+      font-size: 13px;
+    }
 
-  border: none;
 
-  font-family: Georgia, serif;
+    /* ==============================
+       APPLICATIONS
+    ============================== */
 
-  font-size: 18px;
+    .applications {
+      background: var(--ivory);
 
-  color: var(--muted);
+      padding: 120px 30px;
+    }
 
-  cursor: pointer;
+    .applications-inner {
+      max-width: 1250px;
+      margin: auto;
+    }
 
-  transition: 0.3s ease;
-}
+    .application-grid {
+      display: grid;
 
-.fabric-tab:hover {
-  color: var(--dark);
-}
+      grid-template-columns: repeat(4, 1fr);
 
-.fabric-tab.active {
-  color: var(--dark);
-}
+      gap: 15px;
 
-.fabric-tab.active::after {
-  content: "";
+      margin-top: 60px;
+    }
 
-  position: absolute;
+    .application {
+      padding: 45px 25px;
 
-  left: 25%;
+      border: 1px solid var(--border);
 
-  right: 25%;
+      text-align: center;
 
-  bottom: -1px;
+      transition: 0.3s;
+    }
 
-  height: 2px;
+    .application:hover {
+      transform: translateY(-5px);
+      background: white;
+    }
 
-  background: var(--accent);
-}
+    .application h3 {
+      font-family: Georgia, serif;
 
+      font-size: 21px;
 
-/* =========================================================
-   FABRIC LIST
-========================================================= */
+      font-weight: normal;
+    }
 
-.fabric-list-wrapper {
-  padding-top: 55px;
 
-  scroll-margin-top: 100px;
-}
+    /* ==============================
+       JOURNAL
+    ============================== */
 
-.fabric-list-title {
-  text-align: center;
+    .journal-grid {
+      display: grid;
 
-  margin-bottom: 35px;
-}
+      grid-template-columns: repeat(3, 1fr);
 
-.fabric-list-title span {
-  display: block;
+      gap: 25px;
+    }
 
-  font-size: 9px;
+    .journal-card {
+      border-top: 1px solid var(--border);
 
-  letter-spacing: 3px;
+      padding-top: 20px;
+    }
 
-  text-transform: uppercase;
+    .journal-card img {
+      height: 250px;
 
-  color: var(--accent);
+      object-fit: cover;
 
-  margin-bottom: 8px;
-}
+      margin-bottom: 25px;
+    }
 
-.fabric-list-title h3 {
-  font-family: Georgia, serif;
+    .journal-card small {
+      color: var(--accent);
 
-  font-weight: normal;
+      text-transform: uppercase;
 
-  font-size: 34px;
-}
+      letter-spacing: 2px;
 
-.fabric-list {
-  display: grid;
+      font-size: 9px;
+    }
 
-  grid-template-columns: repeat(3, 1fr);
+    .journal-card h3 {
+      font-family: Georgia, serif;
 
-  border-top: 1px solid var(--border);
-}
+      font-size: 26px;
 
-.fabric-item {
-  padding: 25px 15px;
+      font-weight: normal;
 
-  border-bottom: 1px solid var(--border);
+      margin-top: 10px;
+    }
 
-  font-family: Georgia, serif;
 
-  font-size: 19px;
+    /* ==============================
+       CONTACT
+    ============================== */
 
-  transition: 0.3s ease;
-}
+    .contact {
+      background: var(--beige);
 
-.fabric-item:hover {
-  background: var(--ivory);
+      padding: 120px 30px;
+    }
 
-  padding-left: 20px;
-}
+    .contact-inner {
+      max-width: 1000px;
+      margin: auto;
 
-.fabric-item span {
-  display: block;
+      text-align: center;
+    }
 
-  font-family: Arial, sans-serif;
+    .contact h2 {
+      font-family: Georgia, serif;
 
-  font-size: 10px;
+      font-size: clamp(40px, 6vw, 70px);
 
-  letter-spacing: 2px;
+      font-weight: normal;
 
-  color: var(--accent);
+      line-height: 1.05;
 
-  margin-bottom: 6px;
-}
+      margin-bottom: 25px;
+    }
 
+    .contact p {
+      color: var(--muted);
 
-/* =========================================================
-   ABOUT
-========================================================= */
+      margin-bottom: 40px;
+    }
 
-.about {
-  background: var(--dark);
+    .contact-details {
+      margin-top: 60px;
 
-  color: white;
-}
+      display: flex;
 
-.about-inner {
-  max-width: 1250px;
+      justify-content: center;
 
-  margin: auto;
+      gap: 45px;
 
-  padding: 130px 30px;
+      flex-wrap: wrap;
+    }
 
-  display: grid;
+    .contact-details div {
+      font-size: 12px;
 
-  grid-template-columns: 1fr 1fr;
+      letter-spacing: 1px;
+    }
 
-  gap: 100px;
-}
+    .contact-details span {
+      display: block;
 
-.about h2 {
-  font-family: Georgia, serif;
+      color: var(--accent);
 
-  font-size: 60px;
+      font-size: 9px;
 
-  font-weight: normal;
+      letter-spacing: 2px;
 
-  line-height: 1.05;
-}
+      text-transform: uppercase;
 
-.about-text p {
-  color: #c5c0b7;
+      margin-bottom: 5px;
+    }
 
-  margin-bottom: 25px;
+    .contact-details a {
+      transition: 0.3s;
+    }
 
-  font-size: 15px;
-}
+    .contact-details a:hover {
+      color: var(--accent);
+    }
 
-.about-label {
-  color: #b49779;
 
-  font-size: 10px;
+    /* ==============================
+       FOOTER
+    ============================== */
 
-  letter-spacing: 3px;
+    footer {
+      background: var(--dark);
 
-  text-transform: uppercase;
+      color: white;
 
-  margin-bottom: 20px;
-}
+      padding: 50px 30px;
+    }
 
+    .footer-inner {
+      max-width: 1250px;
+      margin: auto;
 
-/* =========================================================
-   EXPERTISE
-========================================================= */
+      display: flex;
 
-.expertise-grid {
-  display: grid;
+      justify-content: space-between;
 
-  grid-template-columns: repeat(4, 1fr);
+      align-items: center;
+    }
 
-  border-top: 1px solid var(--border);
-}
+    footer .logo {
+      font-size: 20px;
+    }
 
-.expertise {
-  padding: 40px 25px;
+    footer p {
+      color: #999;
 
-  border-right: 1px solid var(--border);
-}
+      font-size: 11px;
+    }
 
-.expertise:last-child {
-  border-right: none;
-}
 
-.number {
-  font-family: Georgia, serif;
+    /* ==============================
+       WHATSAPP
+    ============================== */
 
-  font-size: 28px;
+    .whatsapp {
+      position: fixed;
 
-  color: var(--accent);
+      right: 25px;
+      bottom: 25px;
 
-  margin-bottom: 25px;
-}
+      width: 55px;
+      height: 55px;
 
-.expertise h3 {
-  font-family: Georgia, serif;
+      border-radius: 50%;
 
-  font-weight: normal;
+      background: #292722;
 
-  font-size: 23px;
+      color: white;
 
-  margin-bottom: 15px;
-}
+      display: flex;
 
-.expertise p {
-  color: var(--muted);
+      align-items: center;
 
-  font-size: 13px;
-}
+      justify-content: center;
 
+      z-index: 999;
 
-/* =========================================================
-   APPLICATIONS
-========================================================= */
+      box-shadow: 0 5px 20px rgba(0,0,0,0.15);
 
-.applications {
-  background: var(--ivory);
+      transition: 0.3s;
+    }
 
-  padding: 120px 30px;
-}
+    .whatsapp:hover {
+      transform: translateY(-4px);
+      background: #806c55;
+    }
 
-.applications-inner {
-  max-width: 1250px;
+    .whatsapp svg {
+      width: 25px;
+      height: 25px;
+      fill: currentColor;
+    }
 
-  margin: auto;
-}
 
-.application-grid {
-  display: grid;
+    /* ==============================
+       INSTAGRAM
+    ============================== */
 
-  grid-template-columns: repeat(4, 1fr);
+    .instagram {
+      position: fixed;
 
-  gap: 15px;
+      right: 25px;
+      bottom: 95px;
 
-  margin-top: 60px;
-}
+      width: 55px;
+      height: 55px;
 
-.application {
-  padding: 45px 25px;
+      border-radius: 50%;
 
-  border: 1px solid var(--border);
+      background: #292722;
 
-  text-align: center;
+      color: white;
 
-  transition: 0.3s;
-}
+      display: flex;
 
-.application:hover {
-  transform: translateY(-5px);
+      align-items: center;
 
-  background: white;
-}
+      justify-content: center;
 
-.application h3 {
-  font-family: Georgia, serif;
+      z-index: 999;
 
-  font-size: 21px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.15);
 
-  font-weight: normal;
-}
+      transition: 0.3s;
+    }
 
+    .instagram:hover {
+      transform: translateY(-4px);
+      background: #806c55;
+    }
 
-/* =========================================================
-   JOURNAL
-========================================================= */
+    .instagram svg {
+      width: 25px;
+      height: 25px;
 
-.journal-grid {
-  display: grid;
+      fill: none;
 
-  grid-template-columns: repeat(3, 1fr);
+      stroke: currentColor;
 
-  gap: 25px;
-}
+      stroke-width: 1.8;
+    }
 
-.journal-card {
-  border-top: 1px solid var(--border);
 
-  padding-top: 20px;
-}
+    /* ==============================
+       MOBILE
+    ============================== */
 
-.journal-card img {
-  height: 250px;
+    @media(max-width: 800px) {
 
-  object-fit: cover;
+      nav {
+        display: none;
+      }
 
-  margin-bottom: 25px;
-}
+      .hero {
+        grid-template-columns: 1fr;
 
-.journal-card small {
-  color: var(--accent);
+        min-height: auto;
+      }
 
-  text-transform: uppercase;
+      .hero-text {
+        padding: 120px 25px 70px;
+      }
 
-  letter-spacing: 2px;
+      .hero-image {
+        min-height: 500px;
+      }
 
-  font-size: 9px;
-}
+      .section {
+        padding: 80px 20px;
+      }
 
-.journal-card h3 {
-  font-family: Georgia, serif;
+      .section-heading {
+        display: block;
+      }
 
-  font-size: 26px;
+      .section-heading h2 {
+        font-size: 42px;
 
-  font-weight: normal;
+        margin-bottom: 20px;
+      }
 
-  margin-top: 10px;
-}
+      .fabric-grid {
+        grid-template-columns: 1fr;
+      }
 
+      .fabric-card {
+        min-height: 450px;
+      }
 
-/* =========================================================
-   CONTACT
-========================================================= */
+      .fabric-card img {
+        min-height: 450px;
+      }
 
-.contact {
-  background: var(--beige);
+      .fabric-items {
+        grid-template-columns: 1fr;
+      }
 
-  padding: 120px 30px;
-}
+      .about-inner {
+        grid-template-columns: 1fr;
 
-.contact-inner {
-  max-width: 900px;
+        gap: 50px;
 
-  margin: auto;
+        padding: 80px 25px;
+      }
 
-  text-align: center;
-}
+      .about h2 {
+        font-size: 48px;
+      }
 
-.contact h2 {
-  font-family: Georgia, serif;
+      .expertise-grid {
+        grid-template-columns: 1fr 1fr;
+      }
 
-  font-size: clamp(40px, 6vw, 70px);
+      .expertise {
+        border-bottom: 1px solid var(--border);
+      }
 
-  font-weight: normal;
+      .application-grid {
+        grid-template-columns: 1fr 1fr;
+      }
 
-  line-height: 1.05;
+      .journal-grid {
+        grid-template-columns: 1fr;
+      }
 
-  margin-bottom: 25px;
-}
+      .contact-details {
+        flex-direction: column;
 
-.contact p {
-  color: var(--muted);
+        gap: 25px;
+      }
 
-  margin-bottom: 40px;
-}
+      .footer-inner {
+        flex-direction: column;
 
-.contact-details {
-  margin-top: 60px;
+        gap: 20px;
 
-  display: flex;
+        text-align: center;
+      }
 
-  justify-content: center;
+      .whatsapp,
+      .instagram {
+        right: 18px;
+      }
 
-  gap: 50px;
+    }
 
-  flex-wrap: wrap;
-}
-
-.contact-details div {
-  font-size: 12px;
-
-  letter-spacing: 1px;
-}
-
-.contact-details span {
-  display: block;
-
-  color: var(--accent);
-
-  font-size: 9px;
-
-  letter-spacing: 2px;
-
-  text-transform: uppercase;
-
-  margin-bottom: 5px;
-}
-
-
-/* =========================================================
-   FOOTER
-========================================================= */
-
-footer {
-  background: var(--dark);
-
-  color: white;
-
-  padding: 50px 30px;
-}
-
-.footer-inner {
-  max-width: 1250px;
-
-  margin: auto;
-
-  display: flex;
-
-  justify-content: space-between;
-
-  align-items: center;
-}
-
-footer .logo {
-  font-size: 20px;
-}
-
-footer p {
-  color: #999;
-
-  font-size: 11px;
-}
-
-
-/* =========================================================
-   WHATSAPP BUTTON
-========================================================= */
-
-.whatsapp {
-  position: fixed;
-
-  right: 25px;
-
-  bottom: 25px;
-
-  width: 58px;
-
-  height: 58px;
-
-  border-radius: 50%;
-
-  background: #292722;
-
-  color: white;
-
-  display: flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  z-index: 999;
-
-  box-shadow: 0 5px 20px rgba(0,0,0,0.18);
-
-  transition: 0.3s ease;
-}
-
-.whatsapp:hover {
-  transform: translateY(-4px);
-
-  background: #806c55;
-}
-
-.whatsapp svg {
-  width: 27px;
-
-  height: 27px;
-
-  fill: currentColor;
-}
-
-
-/* =========================================================
-   MOBILE
-========================================================= */
-
-@media(max-width: 800px) {
-
-  nav {
-    display: none;
-  }
-
-  .hero {
-    grid-template-columns: 1fr;
-
-    min-height: auto;
-  }
-
-  .hero-text {
-    padding: 120px 25px 70px;
-  }
-
-  .hero-image {
-    min-height: 500px;
-  }
-
-  .section {
-    padding: 80px 20px;
-  }
-
-  .section-heading {
-    display: block;
-  }
-
-  .section-heading h2 {
-    font-size: 42px;
-
-    margin-bottom: 20px;
-  }
-
-  .fabric-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .fabric-card {
-    min-height: 450px;
-  }
-
-  .fabric-card img {
-    min-height: 450px;
-  }
-
-  .fabric-tabs {
-    justify-content: flex-start;
-
-    overflow-x: auto;
-
-    flex-wrap: nowrap;
-
-    scrollbar-width: none;
-  }
-
-  .fabric-tabs::-webkit-scrollbar {
-    display: none;
-  }
-
-  .fabric-tab {
-    padding: 20px 25px;
-
-    white-space: nowrap;
-
-    font-size: 16px;
-  }
-
-  .fabric-list {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .fabric-list-title h3 {
-    font-size: 29px;
-  }
-
-  .about-inner {
-    grid-template-columns: 1fr;
-
-    gap: 50px;
-
-    padding: 80px 25px;
-  }
-
-  .about h2 {
-    font-size: 48px;
-  }
-
-  .expertise-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .expertise {
-    border-bottom: 1px solid var(--border);
-  }
-
-  .application-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .journal-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .footer-inner {
-    flex-direction: column;
-
-    gap: 20px;
-
-    text-align: center;
-  }
-
-}
-
-
-/* =========================================================
-   SMALL MOBILE
-========================================================= */
-
-@media(max-width: 500px) {
-
-  .fabric-list {
-    grid-template-columns: 1fr;
-  }
-
-  .fabric-item {
-    padding: 20px 10px;
-  }
-
-  .application-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .expertise-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .fabric-card {
-    min-height: 400px;
-  }
-
-  .fabric-card img {
-    min-height: 400px;
-  }
-
-}
-
-</style>
+  </style>
 
 </head>
 
@@ -1054,9 +940,9 @@ footer p {
 <body>
 
 
-<!-- =========================================================
+<!-- ==============================
      HEADER
-========================================================= -->
+============================== -->
 
 <header>
 
@@ -1090,9 +976,9 @@ footer p {
 
 
 
-<!-- =========================================================
+<!-- ==============================
      HERO
-========================================================= -->
+============================== -->
 
 <section class="hero">
 
@@ -1126,9 +1012,9 @@ footer p {
 
 
 
-<!-- =========================================================
+<!-- ==============================
      INTRO
-========================================================= -->
+============================== -->
 
 <section class="intro">
 
@@ -1145,8 +1031,8 @@ footer p {
 
     <p>
       From RFD fabrics ready for dyeing to refined viscose,
-      polyester, nylon and blended qualities, we source and
-      supply fabrics selected for their quality, versatility
+      polyester, nylon, blends and specialty qualities, we source
+      and supply fabrics selected for their quality, versatility
       and application.
     </p>
 
@@ -1156,9 +1042,9 @@ footer p {
 
 
 
-<!-- =========================================================
+<!-- ==============================
      FABRICS
-========================================================= -->
+============================== -->
 
 <section class="section" id="fabrics">
 
@@ -1175,181 +1061,283 @@ footer p {
     </div>
 
     <p>
-      Explore our range of fabric qualities across viscose,
-      polyester, nylon and blended fabrics. Availability and
-      specifications may vary according to current sourcing
-      requirements.
+      A selection of fabrics supplied by Mehar Creation.
+      Availability and specifications may vary according
+      to current sourcing requirements.
     </p>
 
   </div>
 
 
 
-  <!-- =====================================================
-       FABRIC CATEGORY CARDS
-  ====================================================== -->
+  <!-- FABRIC COLLECTION -->
 
   <div class="fabric-grid">
 
 
     <!-- VISCOSE -->
 
-    <div class="fabric-card active"
-         data-category="viscose">
+    <details class="fabric-card">
 
-      <img
-        src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=1200&q=85"
-        alt="Viscose fabric">
+      <summary>
 
-      <div class="fabric-info">
+        <img
+          src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=1200&q=85"
+          alt="Viscose fabric">
 
-        <h3>Viscose</h3>
+        <div class="fabric-info">
 
-        <p>
-          Shantoon • German • Muslin • Upada • Crepe • Organza
-        </p>
+          <h3>Viscose</h3>
 
-      </div>
+          <p>
+            Shantoon • German • Muslin • Upada • Crepe • Organza
+          </p>
 
-    </div>
+        </div>
+
+      </summary>
+
+    </details>
 
 
 
     <!-- POLYESTER -->
 
-    <div class="fabric-card"
-         data-category="polyester">
+    <details class="fabric-card">
 
-      <img
-        src="https://images.unsplash.com/photo-1605763240000-7e93b172d754?auto=format&fit=crop&w=1200&q=85"
-        alt="Polyester fabric">
+      <summary>
 
-      <div class="fabric-info">
+        <img
+          src="https://images.unsplash.com/photo-1605763240000-7e93b172d754?auto=format&fit=crop&w=1200&q=85"
+          alt="Polyester fabric">
 
-        <h3>Polyester</h3>
+        <div class="fabric-info">
 
-        <p>
-          Rayon • Muslin • Taffeta • Satin • Japan Crepe
-        </p>
+          <h3>Polyester</h3>
 
-      </div>
+          <p>
+            Rayon • Muslin • Taffeta • Satin • Japan Crepe
+          </p>
 
-    </div>
+        </div>
+
+      </summary>
+
+    </details>
 
 
 
     <!-- NYLON -->
 
-    <div class="fabric-card"
-         data-category="nylon">
+    <details class="fabric-card">
 
-      <img
-        src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1200&q=85"
-        alt="Nylon fabric">
+      <summary>
 
-      <div class="fabric-info">
+        <img
+          src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1200&q=85"
+          alt="Nylon fabric">
 
-        <h3>Nylon</h3>
+        <div class="fabric-info">
 
-        <p>
-          Sofia • Nazneen • Dhupion • Organza • Shimmer • Chinon
-        </p>
+          <h3>Nylon</h3>
 
-      </div>
+          <p>
+            Sofia • Nazneen • Dhupion • Organza • Shimmer • Chinon
+          </p>
 
-    </div>
+        </div>
+
+      </summary>
+
+    </details>
 
 
 
     <!-- BLENDS -->
 
-    <div class="fabric-card"
-         data-category="blends">
+    <details class="fabric-card">
 
-      <img
-        src="https://images.unsplash.com/photo-1590736969955-71cc94901144?auto=format&fit=crop&w=1200&q=85"
-        alt="Blended fabrics">
+      <summary>
 
-      <div class="fabric-info">
+        <img
+          src="https://images.unsplash.com/photo-1590736969955-71cc94901144?auto=format&fit=crop&w=1200&q=85"
+          alt="Blended fabrics">
 
-        <h3>Blends</h3>
+        <div class="fabric-info">
 
-        <p>
-          PST • Vatican
-        </p>
+          <h3>Blends</h3>
+
+          <p>
+            PST • Vatican
+          </p>
+
+        </div>
+
+      </summary>
+
+    </details>
+
+  </div>
+
+
+
+  <!-- ==============================
+       FABRIC DROP-DOWN LIST
+  ============================== -->
+
+  <div class="fabric-dropdown">
+
+
+    <!-- VISCOSE -->
+
+    <details class="fabric-category">
+
+      <summary>
+        Viscose
+      </summary>
+
+      <div class="fabric-items">
+
+        <div class="fabric-item">
+          Viscose Shantoon
+        </div>
+
+        <div class="fabric-item">
+          Viscose German
+        </div>
+
+        <div class="fabric-item">
+          Viscose Muslin
+        </div>
+
+        <div class="fabric-item">
+          Viscose Muslin Bright
+        </div>
+
+        <div class="fabric-item">
+          Viscose Upada
+        </div>
+
+        <div class="fabric-item">
+          Viscose Natural Crepe
+        </div>
+
+        <div class="fabric-item">
+          Viscose Organza
+        </div>
+
+        <div class="fabric-item">
+          Premium Muslin
+        </div>
+
+        <div class="fabric-item">
+          Viscose RFD
+        </div>
 
       </div>
 
-    </div>
-
-  </div>
+    </details>
 
 
 
-  <!-- =====================================================
-       CATEGORY TABS
-  ====================================================== -->
+    <!-- POLYESTER -->
 
-  <div class="fabric-tabs">
+    <details class="fabric-category">
 
-    <button class="fabric-tab active"
-            data-category="viscose">
+      <summary>
+        Polyester
+      </summary>
 
-      Viscose
+      <div class="fabric-items">
 
-    </button>
+        <div class="fabric-item">
+          Rayon
+        </div>
 
-    <button class="fabric-tab"
-            data-category="polyester">
+        <div class="fabric-item">
+          Muslin
+        </div>
 
-      Polyester
+        <div class="fabric-item">
+          Taffeta
+        </div>
 
-    </button>
+        <div class="fabric-item">
+          Satin
+        </div>
 
-    <button class="fabric-tab"
-            data-category="nylon">
+        <div class="fabric-item">
+          Japan Crepe
+        </div>
 
-      Nylon
+      </div>
 
-    </button>
-
-    <button class="fabric-tab"
-            data-category="blends">
-
-      Blends
-
-    </button>
-
-  </div>
+    </details>
 
 
 
-  <!-- =====================================================
-       DYNAMIC FABRIC LIST
-  ====================================================== -->
+    <!-- NYLON -->
 
-  <div class="fabric-list-wrapper"
-       id="fabric-list-section">
+    <details class="fabric-category">
 
-    <div class="fabric-list-title">
+      <summary>
+        Nylon
+      </summary>
 
-      <span id="list-label">
-        Viscose Collection
-      </span>
+      <div class="fabric-items">
 
-      <h3 id="list-heading">
-        Viscose Fabrics
-      </h3>
+        <div class="fabric-item">
+          Sofia
+        </div>
 
-    </div>
+        <div class="fabric-item">
+          Nazneen
+        </div>
+
+        <div class="fabric-item">
+          Dhupion
+        </div>
+
+        <div class="fabric-item">
+          Organza
+        </div>
+
+        <div class="fabric-item">
+          Shimmer
+        </div>
+
+        <div class="fabric-item">
+          Chinon
+        </div>
+
+      </div>
+
+    </details>
 
 
-    <div class="fabric-list"
-         id="fabric-list">
 
-      <!-- VISCOSE LIST LOADS HERE -->
+    <!-- BLENDS -->
 
-    </div>
+    <details class="fabric-category">
+
+      <summary>
+        Blends
+      </summary>
+
+      <div class="fabric-items">
+
+        <div class="fabric-item">
+          PST
+        </div>
+
+        <div class="fabric-item">
+          Vatican
+        </div>
+
+      </div>
+
+    </details>
+
 
   </div>
 
@@ -1357,9 +1345,9 @@ footer p {
 
 
 
-<!-- =========================================================
+<!-- ==============================
      ABOUT
-========================================================= -->
+============================== -->
 
 <section class="about" id="about">
 
@@ -1395,9 +1383,9 @@ footer p {
       </p>
 
       <p>
-        Our range includes viscose, polyester, nylon and
-        blended fabrics suitable for dyeing, printing,
-        garment manufacturing and various fashion applications.
+        Our range includes viscose, polyester, nylon, blends
+        and other fabrics suitable for dyeing, printing and
+        garment manufacturing.
       </p>
 
       <p>
@@ -1415,9 +1403,9 @@ footer p {
 
 
 
-<!-- =========================================================
+<!-- ==============================
      EXPERTISE
-========================================================= -->
+============================== -->
 
 <section class="section" id="expertise">
 
@@ -1474,9 +1462,8 @@ footer p {
       <h3>Requirements</h3>
 
       <p>
-        Whether you need a specific fabric quality or a
-        customized sourcing requirement, we work around
-        your requirement.
+        Whether you need a specific fabric quality, we work
+        around your requirement.
       </p>
 
     </div>
@@ -1502,9 +1489,9 @@ footer p {
 
 
 
-<!-- =========================================================
+<!-- ==============================
      APPLICATIONS
-========================================================= -->
+============================== -->
 
 <section class="applications">
 
@@ -1565,9 +1552,9 @@ footer p {
 
 
 
-<!-- =========================================================
+<!-- ==============================
      JOURNAL
-========================================================= -->
+============================== -->
 
 <section class="section" id="journal">
 
@@ -1605,7 +1592,7 @@ footer p {
       </small>
 
       <h3>
-        Understanding Fabric Qualities
+        Understanding RFD Fabrics
       </h3>
 
     </article>
@@ -1651,9 +1638,9 @@ footer p {
 
 
 
-<!-- =========================================================
+<!-- ==============================
      CONTACT
-========================================================= -->
+============================== -->
 
 <section class="contact" id="contact">
 
@@ -1677,11 +1664,13 @@ footer p {
       href="https://wa.me/919953414166"
       class="button"
       target="_blank"
-      rel="noopener"
+      rel="noopener noreferrer"
     >
       Enquire on WhatsApp
     </a>
 
+
+    <!-- CONTACT DETAILS -->
 
     <div class="contact-details">
 
@@ -1689,7 +1678,19 @@ footer p {
 
         <span>Location</span>
 
-        Surat, Gujarat, India
+        3704-05, Radha Krishna Textile Market, 
+	Ring Road, Surat, Gujarat, India
+
+      </div>
+
+
+      <div>
+
+        <span>Mobile</span>
+
+        <a href="tel:+919953414166">
+          +91 99534 14166
+        </a>
 
       </div>
 
@@ -1698,7 +1699,9 @@ footer p {
 
         <span>Email</span>
 
-        meharcreation07@gmail.com
+        <a href="mailto:meharcreation07@gmail.com">
+          meharcreation07@gmail.com
+        </a>
 
       </div>
 
@@ -1707,7 +1710,13 @@ footer p {
 
         <span>Instagram</span>
 
-        @meharcreation.official
+        <a
+          href="https://www.instagram.com/meharcreation.official/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          @meharcreation.official
+        </a>
 
       </div>
 
@@ -1719,9 +1728,9 @@ footer p {
 
 
 
-<!-- =========================================================
+<!-- ==============================
      FOOTER
-========================================================= -->
+============================== -->
 
 <footer>
 
@@ -1746,74 +1755,45 @@ footer p {
 
 
 
-<!-- =========================================================
-     WHATSAPP FLOATING BUTTON
-========================================================= -->
+<!-- ==============================
+     INSTAGRAM FLOATING BUTTON
+============================== -->
 
 <a
-  href="https://wa.me/919953414166"
-  class="whatsapp"
+  href="https://www.instagram.com/meharcreation.official/"
+  class="instagram"
   target="_blank"
-  rel="noopener"
-  aria-label="Chat with Mehar Creation on WhatsApp"
+  rel="noopener noreferrer"
+  aria-label="Instagram"
 >
-
-  <!-- WhatsApp SVG Icon -->
 
   <svg
     viewBox="0 0 24 24"
-    xmlns="http://www.w3.org/2000/svg"
     aria-hidden="true"
   >
 
-    <path d="
-      M20.52 3.48
-      A11.87 11.87 0 0 0 12.05 0
-      C5.5 0 .18 5.32 .18 11.87
-      c0 2.09 .55 4.13 1.6 5.93
-      L.08 24
-      l6.35-1.67
-      a11.87 11.87 0 0 0 5.62 1.43h.01
-      c6.55 0 11.87-5.32 11.87-11.87
-      0-3.17-1.24-6.15-3.41-8.41z
+    <rect
+      x="3"
+      y="3"
+      width="18"
+      height="18"
+      rx="5"
+      ry="5"
+    ></rect>
 
-      M12.06 21.75
-      h-.01
-      a9.84 9.84 0 0 1-5.02-1.37
-      l-.36-.21
-      -3.77.99
-      1.01-3.68
-      -.23-.38
-      a9.84 9.84 0 0 1-1.51-5.23
-      c0-5.44 4.43-9.87 9.88-9.87
-      2.64 0 5.12 1.03 6.99 2.9
-      a9.83 9.83 0 0 1 2.89 6.99
-      c0 5.44-4.43 9.87-9.87 9.87z
+    <circle
+      cx="12"
+      cy="12"
+      r="4"
+    ></circle>
 
-      M17.48 14.84
-      c-.3-.15-1.77-.87-2.05-.97
-      -.28-.1-.48-.15-.68.15
-      -.2.3-.77.97-.94 1.17
-      -.17.2-.35.22-.65.07
-      -.3-.15-1.26-.46-2.4-1.47
-      -.89-.79-1.49-1.77-1.66-2.07
-      -.17-.3-.02-.46.13-.61
-      .13-.13.3-.35.45-.52
-      .15-.17.2-.3.3-.5
-      .1-.2.05-.37-.02-.52
-      -.07-.15-.68-1.64-.93-2.25
-      -.24-.59-.49-.51-.68-.52
-      -.17-.01-.37-.01-.57-.01
-      -.2 0-.52.07-.8.37
-      -.27.3-1.04 1.02-1.04 2.5
-      0 1.47 1.07 2.9 1.22 3.1
-      .15.2 2.1 3.21 5.09 4.5
-      .71.31 1.26.5 1.69.64
-      .71.23 1.36.2 1.87.12
-      .57-.09 1.77-.72 2.02-1.42
-      .25-.7.25-1.3.17-1.42
-      -.07-.12-.27-.2-.57-.35z
-    "/>
+    <circle
+      cx="17.5"
+      cy="6.5"
+      r="1"
+      fill="currentColor"
+      stroke="none"
+    ></circle>
 
   </svg>
 
@@ -1821,256 +1801,32 @@ footer p {
 
 
 
-<!-- =========================================================
-     JAVASCRIPT
-========================================================= -->
-
-<script>
-
-
-/* =========================================================
-   FABRIC DATA
-========================================================= */
-
-const fabricData = {
-
-  viscose: {
-
-    label: "Viscose Collection",
-
-    heading: "Viscose Fabrics",
-
-    items: [
-      "Viscose Shantoon",
-      "Viscose German",
-      "Viscose Muslin",
-      "Viscose Upada",
-      "Viscose Georgette",
-      "Viscose Natural Crepe",
-      "Viscose Organza",
-      "Viscose Glass Organza",
-      "Viscose Twill Organza",
-      "Viscose Chanderi"
-    ]
-
-  },
-
-
-  polyester: {
-
-    label: "Polyester Collection",
-
-    heading: "Polyester Fabrics",
-
-    items: [
-      "Rayon",
-      "Muslin",
-      "Taffeta",
-      "Satin",
-      "Japan Crepe"
-    ]
-
-  },
-
-
-  nylon: {
-
-    label: "Nylon Collection",
-
-    heading: "Nylon Fabrics",
-
-    items: [
-      "Sofia",
-      "Nazneen",
-      "Dhupion",
-      "Organza",
-      "Chanderi",
-      "Shimmer",
-      "Chinon"
-    ]
-
-  },
-
-
-  blends: {
-
-    label: "Blended Collection",
-
-    heading: "Blended Fabrics",
-
-    items: [
-      "PST",
-      "Vatican"
-    ]
-
-  }
-
-};
-
-
-
-/* =========================================================
-   ELEMENTS
-========================================================= */
-
-const fabricList = document.getElementById("fabric-list");
-
-const listLabel = document.getElementById("list-label");
-
-const listHeading = document.getElementById("list-heading");
-
-const fabricListSection =
-  document.getElementById("fabric-list-section");
-
-const categoryCards =
-  document.querySelectorAll(".fabric-card");
-
-const categoryTabs =
-  document.querySelectorAll(".fabric-tab");
-
-
-
-/* =========================================================
-   DISPLAY FABRIC LIST
-========================================================= */
-
-function showFabricCategory(category, scrollToList = true) {
-
-  const data = fabricData[category];
-
-  if (!data) {
-    return;
-  }
-
-
-  /* Update title */
-
-  listLabel.textContent = data.label;
-
-  listHeading.textContent = data.heading;
-
-
-  /* Clear old list */
-
-  fabricList.innerHTML = "";
-
-
-  /* Create new items */
-
-  data.items.forEach((fabric, index) => {
-
-    const item = document.createElement("div");
-
-    item.className = "fabric-item";
-
-    item.innerHTML = `
-      <span>${String(index + 1).padStart(2, "0")}</span>
-      ${fabric}
-    `;
-
-    fabricList.appendChild(item);
-
-  });
-
-
-  /* Update active category cards */
-
-  categoryCards.forEach(card => {
-
-    if (card.dataset.category === category) {
-
-      card.classList.add("active");
-
-    } else {
-
-      card.classList.remove("active");
-
-    }
-
-  });
-
-
-  /* Update active tabs */
-
-  categoryTabs.forEach(tab => {
-
-    if (tab.dataset.category === category) {
-
-      tab.classList.add("active");
-
-    } else {
-
-      tab.classList.remove("active");
-
-    }
-
-  });
-
-
-  /* Smooth scroll to fabric list */
-
-  if (scrollToList) {
-
-    setTimeout(() => {
-
-      fabricListSection.scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-      });
-
-    }, 100);
-
-  }
-
-}
-
-
-
-/* =========================================================
-   CATEGORY CARD CLICK
-========================================================= */
-
-categoryCards.forEach(card => {
-
-  card.addEventListener("click", function() {
-
-    const category = this.dataset.category;
-
-    showFabricCategory(category, true);
-
-  });
-
-});
-
-
-
-/* =========================================================
-   CATEGORY TAB CLICK
-========================================================= */
-
-categoryTabs.forEach(tab => {
-
-  tab.addEventListener("click", function() {
-
-    const category = this.dataset.category;
-
-    showFabricCategory(category, true);
-
-  });
-
-});
-
-
-
-/* =========================================================
-   INITIAL LOAD
-========================================================= */
-
-showFabricCategory("viscose", false);
-
-
-</script>
+<!-- ==============================
+     WHATSAPP FLOATING BUTTON
+============================== -->
+
+<a
+  href="https://wa.me/919953414166"
+  class="whatsapp"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="WhatsApp"
+>
+
+  <svg
+    viewBox="0 0 24 24"
+    aria-hidden="true"
+  >
+
+    <path
+      d="M20.52 3.48A11.82 11.82 0 0 0 12.08 0C5.54 0 .22 5.32.22 11.86c0 2.09.55 4.13 1.6 5.92L.12 24l6.36-1.67a11.86 11.86 0 0 0 5.59 1.42h.01c6.54 0 11.86-5.32 11.86-11.86 0-3.17-1.23-6.15-3.42-8.41ZM12.08 21.7h-.01a9.82 9.82 0 0 1-5-1.37l-.36-.21-3.77.99 1.01-3.68-.23-.38a9.82 9.82 0 1 1 8.36 4.65Zm5.39-7.36c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.47-.89-.79-1.49-1.76-1.67-2.06-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.2 5.09 4.49.71.31 1.27.49 1.7.63.71.23 1.35.2 1.86.12.57-.08 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z"
+    ></path>
+
+  </svg>
+
+</a>
 
 
 </body>
+
 </html>
