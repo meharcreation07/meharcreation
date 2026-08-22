@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Understanding Fabric Qualities | Mehar Creation</title>
+<meta name="description" content="A simple, no-jargon guide to what makes one fabric different from another — fiber, weight, weave and finish — from Mehar Creation, Surat.">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: Arial, Helvetica, sans-serif; background:#f7f4ee; color:#292722; line-height:1.7; }
+  img { width:100%; display:block; }
+  a { color:inherit; }
+  :root{ --cream:#f7f4ee; --ivory:#fbfaf7; --beige:#e7dfd1; --dark:#292722; --muted:#777168; --border:#ddd5c8; --accent:#9b8063; }
+
+  header { padding:26px 30px; border-bottom:1px solid var(--border); background:var(--ivory); }
+  .nav-inner { max-width:760px; margin:auto; display:flex; justify-content:space-between; align-items:center; }
+  .logo { font-family: Georgia, serif; font-size:19px; letter-spacing:2px; text-decoration:none; }
+  .back { font-size:12px; letter-spacing:1px; text-transform:uppercase; color:var(--muted); text-decoration:none; }
+  .back:hover { color:var(--accent); }
+
+  main { max-width:760px; margin:auto; padding:60px 30px 100px; }
+  .eyebrow { font-size:11px; letter-spacing:3px; text-transform:uppercase; color:var(--accent); margin-bottom:18px; }
+  h1 { font-family: Georgia, serif; font-weight:normal; font-size:clamp(32px,5vw,46px); line-height:1.15; margin-bottom:28px; }
+  .hero-img { margin-bottom:40px; border-radius:2px; }
+  .hero-img img { height:340px; object-fit:cover; }
+  p { color:#413d37; font-size:16px; margin-bottom:22px; max-width:680px; }
+  h2 { font-family: Georgia, serif; font-weight:normal; font-size:26px; margin:44px 0 16px; }
+  ul { margin:0 0 24px 20px; color:#413d37; font-size:16px; }
+  li { margin-bottom:10px; }
+  strong { color:var(--dark); }
+  .cta { margin-top:56px; padding:32px; background:var(--beige); text-align:center; border-radius:2px; }
+  .cta p { margin-bottom:20px; color:var(--muted); }
+  .button { display:inline-block; padding:14px 26px; background:var(--dark); color:#fff; font-size:11px; letter-spacing:2px; text-transform:uppercase; text-decoration:none; }
+  .button:hover { background:var(--accent); }
+  footer { text-align:center; padding:30px; font-size:11px; color:var(--muted); border-top:1px solid var(--border); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav-inner">
+    <a href="../index.html" class="logo">MEHAR CREATION</a>
+    <a href="../index.html#journal" class="back">← Back to Journal</a>
+  </div>
+</header>
+
+<main>
+  <div class="eyebrow">Fabric Guide</div>
+  <h1>Understanding Fabric Qualities</h1>
+
+  <div class="hero-img">
+    <img src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=1200&q=85" alt="Close-up of fabric texture">
+  </div>
+
+  <p>Walk into any textile market and you'll hear words like "GSM," "RFD," "drape," and "sheer" thrown around like everyone just knows what they mean. They don't have to be confusing. Here's a plain-language guide to the handful of things that actually matter when you're choosing a fabric.</p>
+
+  <h2>1. What the fabric is made from</h2>
+  <p>Every fabric starts as a fiber, and the fiber decides most of its personality.</p>
+  <ul>
+    <li><strong>Natural fibers</strong> (cotton, silk) tend to breathe well and feel soft against the skin, but can be pricier and need more careful washing.</li>
+    <li><strong>Synthetic fibers</strong> (polyester, nylon) are tougher, hold their shape, and are usually more affordable — great for everyday wear and export-scale orders.</li>
+    <li><strong>Semi-synthetic fibers</strong> like viscose sit in between — made from natural wood pulp but processed like a synthetic, giving you a silk-like feel at a fraction of the cost.</li>
+  </ul>
+
+  <h2>2. RFD vs. dyed</h2>
+  <p>You'll see "RFD" a lot in our catalog — it simply means <strong>Ready For Dyeing</strong>. The fabric is woven and finished, but left in its natural white or cream shade so it can be dyed to any color you need. Buying RFD gives you full control over your shade; buying already-dyed fabric saves you a processing step if the color already works for you.</p>
+
+  <h2>3. Weight (GSM)</h2>
+  <p>GSM stands for <strong>Grams per Square Meter</strong> — it tells you how heavy or light a fabric is. A low GSM (like 40–60) means a light, flowy fabric, ideal for dupattas and sheer overlays. A higher GSM means more structure and body, better suited to garments that need to hold a shape.</p>
+
+  <h2>4. Weave and finish</h2>
+  <p>How the threads are put together changes everything about how a fabric behaves. A tight, plain weave (like our Organza) gives a crisp, structured feel. A looser or textured weave (like Nazneen or Chanderi) adds movement and shine. Finishes — like a sequin thread woven through, or a brush pattern — add character on top of the base weave.</p>
+
+  <div class="cta">
+    <p>Not sure which quality fits your project? Tell us what you're making and we'll point you to the right fabric.</p>
+    <a href="https://wa.me/919953414166" class="button" target="_blank" rel="noopener noreferrer">Ask on WhatsApp</a>
+  </div>
+</main>
+
+<footer>© Mehar Creation — Surat Textile Market, Surat</footer>
+
+</body>
+</html>
