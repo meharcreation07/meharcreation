@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Viscose: Feel, Drape & Versatility | Mehar Creation</title>
+<meta name="description" content="What viscose fabric actually is, why it drapes so beautifully, and where it works best — explained simply by Mehar Creation, Surat.">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: Arial, Helvetica, sans-serif; background:#f7f4ee; color:#292722; line-height:1.7; }
+  img { width:100%; display:block; }
+  a { color:inherit; }
+  :root{ --cream:#f7f4ee; --ivory:#fbfaf7; --beige:#e7dfd1; --dark:#292722; --muted:#777168; --border:#ddd5c8; --accent:#9b8063; }
+
+  header { padding:26px 30px; border-bottom:1px solid var(--border); background:var(--ivory); }
+  .nav-inner { max-width:760px; margin:auto; display:flex; justify-content:space-between; align-items:center; }
+  .logo { font-family: Georgia, serif; font-size:19px; letter-spacing:2px; text-decoration:none; }
+  .back { font-size:12px; letter-spacing:1px; text-transform:uppercase; color:var(--muted); text-decoration:none; }
+  .back:hover { color:var(--accent); }
+
+  main { max-width:760px; margin:auto; padding:60px 30px 100px; }
+  .eyebrow { font-size:11px; letter-spacing:3px; text-transform:uppercase; color:var(--accent); margin-bottom:18px; }
+  h1 { font-family: Georgia, serif; font-weight:normal; font-size:clamp(32px,5vw,46px); line-height:1.15; margin-bottom:28px; }
+  .hero-img { margin-bottom:40px; border-radius:2px; }
+  .hero-img img { height:340px; object-fit:cover; }
+  p { color:#413d37; font-size:16px; margin-bottom:22px; max-width:680px; }
+  h2 { font-family: Georgia, serif; font-weight:normal; font-size:26px; margin:44px 0 16px; }
+  ul { margin:0 0 24px 20px; color:#413d37; font-size:16px; }
+  li { margin-bottom:10px; }
+  strong { color:var(--dark); }
+  .cta { margin-top:56px; padding:32px; background:var(--beige); text-align:center; border-radius:2px; }
+  .cta p { margin-bottom:20px; color:var(--muted); }
+  .button { display:inline-block; padding:14px 26px; background:var(--dark); color:#fff; font-size:11px; letter-spacing:2px; text-transform:uppercase; text-decoration:none; }
+  .button:hover { background:var(--accent); }
+  footer { text-align:center; padding:30px; font-size:11px; color:var(--muted); border-top:1px solid var(--border); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav-inner">
+    <a href="../index.html" class="logo">MEHAR CREATION</a>
+    <a href="../index.html#journal" class="back">← Back to Journal</a>
+  </div>
+</header>
+
+<main>
+  <div class="eyebrow">Fabric Guide</div>
+  <h1>Viscose: Feel, Drape & Versatility</h1>
+
+  <div class="hero-img">
+    <img src="https://images.unsplash.com/photo-1566206091558-7f218b696731?auto=format&fit=crop&w=1200&q=85" alt="Soft viscose fabric draped in folds">
+  </div>
+
+  <p>If you've ever touched a fabric that felt almost like silk but cost a lot less, there's a good chance it was viscose. It's one of the most popular fabrics we supply — and one of the most misunderstood. Here's what it actually is, in plain terms.</p>
+
+  <h2>Where viscose comes from</h2>
+  <p>Viscose starts as wood pulp — usually from fast-growing trees like eucalyptus. The pulp is chemically processed and spun into fine threads. So while it isn't a "natural" fiber in the way cotton is, it isn't fully synthetic either. It's often called a <strong>semi-synthetic</strong> fabric, and that's exactly why it behaves the way it does — the softness of a natural fiber, with some of the consistency of a man-made one.</p>
+
+  <h2>Why it drapes so well</h2>
+  <p>"Drape" simply means how a fabric falls and moves. Viscose has a fluid, almost liquid drape — it skims the body instead of sitting stiffly, which is why it's a favorite for anything meant to flow: dupattas, sarees, flared kurtas, and gowns. If you've ever seen a dupatta that seems to float rather than hang, it's very likely viscose.</p>
+
+  <h2>Where we see it used most</h2>
+  <ul>
+    <li><strong>Santoon</strong> — light, breathable, commonly used as lining for lehengas, gowns and bottom wear.</li>
+    <li><strong>Muslin</strong> — sheer and soft, popular for dupattas and layering.</li>
+    <li><strong>German &amp; Uppada finishes</strong> — add a bit more texture and structure while keeping that signature drape.</li>
+  </ul>
+
+  <h2>A few honest things to know</h2>
+  <p>Viscose is breathable and comfortable in warm weather, and it takes dye beautifully — which is why we stock so much of it in RFD (Ready For Dyeing) form. The trade-off: it needs gentler washing than cotton, since it's weaker when wet. For most garment and dupatta uses, that's a small price for how good it looks and feels.</p>
+
+  <div class="cta">
+    <p>Looking for the right viscose weight or finish for your project? We'll help you find it.</p>
+    <a href="https://wa.me/919953414166" class="button" target="_blank" rel="noopener noreferrer">Ask on WhatsApp</a>
+  </div>
+</main>
+
+<footer>© Mehar Creation — Surat Textile Market, Surat</footer>
+
+</body>
+</html>
