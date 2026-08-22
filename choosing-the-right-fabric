@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Choosing the Right Fabric | Mehar Creation</title>
+<meta name="description" content="A simple decision framework for picking the right fabric for your purpose, from Mehar Creation, Surat.">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: Arial, Helvetica, sans-serif; background:#f7f4ee; color:#292722; line-height:1.7; }
+  img { width:100%; display:block; }
+  a { color:inherit; }
+  :root{ --cream:#f7f4ee; --ivory:#fbfaf7; --beige:#e7dfd1; --dark:#292722; --muted:#777168; --border:#ddd5c8; --accent:#9b8063; }
+
+  header { padding:26px 30px; border-bottom:1px solid var(--border); background:var(--ivory); }
+  .nav-inner { max-width:760px; margin:auto; display:flex; justify-content:space-between; align-items:center; }
+  .logo { font-family: Georgia, serif; font-size:19px; letter-spacing:2px; text-decoration:none; }
+  .back { font-size:12px; letter-spacing:1px; text-transform:uppercase; color:var(--muted); text-decoration:none; }
+  .back:hover { color:var(--accent); }
+
+  main { max-width:760px; margin:auto; padding:60px 30px 100px; }
+  .eyebrow { font-size:11px; letter-spacing:3px; text-transform:uppercase; color:var(--accent); margin-bottom:18px; }
+  h1 { font-family: Georgia, serif; font-weight:normal; font-size:clamp(32px,5vw,46px); line-height:1.15; margin-bottom:28px; }
+  .hero-img { margin-bottom:40px; border-radius:2px; }
+  .hero-img img { height:340px; object-fit:cover; }
+  p { color:#413d37; font-size:16px; margin-bottom:22px; max-width:680px; }
+  h2 { font-family: Georgia, serif; font-weight:normal; font-size:26px; margin:44px 0 16px; }
+  ul { margin:0 0 24px 20px; color:#413d37; font-size:16px; }
+  li { margin-bottom:10px; }
+  strong { color:var(--dark); }
+  table { width:100%; border-collapse:collapse; margin:20px 0 30px; font-size:14.5px; }
+  th, td { text-align:left; padding:12px 14px; border-bottom:1px solid var(--border); }
+  th { font-family: Georgia, serif; font-weight:normal; color:var(--muted); text-transform:uppercase; font-size:11px; letter-spacing:1px; }
+  .cta { margin-top:56px; padding:32px; background:var(--beige); text-align:center; border-radius:2px; }
+  .cta p { margin-bottom:20px; color:var(--muted); }
+  .button { display:inline-block; padding:14px 26px; background:var(--dark); color:#fff; font-size:11px; letter-spacing:2px; text-transform:uppercase; text-decoration:none; }
+  .button:hover { background:var(--accent); }
+  footer { text-align:center; padding:30px; font-size:11px; color:var(--muted); border-top:1px solid var(--border); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav-inner">
+    <a href="../index.html" class="logo">MEHAR CREATION</a>
+    <a href="../index.html#journal" class="back">← Back to Journal</a>
+  </div>
+</header>
+
+<main>
+  <div class="eyebrow">Textile Insights</div>
+  <h1>Choosing the Right Fabric</h1>
+
+  <div class="hero-img">
+    <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1200&q=85" alt="Assorted fashion fabrics">
+  </div>
+
+  <p>With dozens of fabric names floating around — Organza, Georgette, Nazneen, Chiffon, Santoon — it's easy to get stuck. You don't need to memorize every fabric type. You just need to answer a few simple questions, and the right choice usually becomes obvious.</p>
+
+  <h2>Start with the purpose, not the name</h2>
+  <p>Before asking "which fabric," ask "what is it for?" A dupatta, a lining, a flowing gown, and a structured blouse each need very different things from a fabric — even if they all end up in the same outfit.</p>
+
+  <table>
+    <tr><th>If you're making…</th><th>Look for a fabric that's…</th></tr>
+    <tr><td>A flowing dupatta or saree</td><td>Light, sheer, good drape — Organza, Nazneen, Chiffon</td></tr>
+    <tr><td>Lining for a lehenga or gown</td><td>Soft, breathable, low sheen — Santoon, Viscose</td></tr>
+    <tr><td>A structured blouse or jacket</td><td>Firmer weave, more body — Taffeta, Chanderi</td></tr>
+    <tr><td>Festive or designer wear</td><td>Texture and shine — Sequence Nazneen, Bright Pattern fabrics</td></tr>
+  </table>
+
+  <h2>Then think about season and comfort</h2>
+  <p>Synthetic fabrics like nylon and polyester hold color well and are budget-friendly, but they breathe less. Viscose and cotton-based fabrics work better in heat and for pieces worn close to the skin. If it's festive wear worn for a few hours, breathability matters less. If it's daily wear, it matters a lot.</p>
+
+  <h2>Decide RFD or already dyed</h2>
+  <p>If you have an exact shade in mind — say, matching a specific bridal color — go with an RFD (Ready For Dyeing) fabric and get it dyed precisely to that shade. If a ready color already works for your order, buying pre-dyed saves you a step and a bit of cost.</p>
+
+  <h2>When in doubt, ask</h2>
+  <p>Even experienced designers double-check with their supplier before a big order — a fabric that looks right in a photo can behave differently once cut and stitched. That's the fastest way to avoid an expensive mistake.</p>
+
+  <div class="cta">
+    <p>Tell us what you're making, your budget, and your quantity — we'll recommend the fabric that fits.</p>
+    <a href="https://wa.me/919953414166" class="button" target="_blank" rel="noopener noreferrer">Ask on WhatsApp</a>
+  </div>
+</main>
+
+<footer>© Mehar Creation — Surat Textile Market, Surat</footer>
+
+</body>
+</html>
