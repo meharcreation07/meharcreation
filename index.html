@@ -710,62 +710,47 @@
        JOURNAL
     ============================== */
 
-    /* ==============================
-   JOURNAL
-============================== */
+    .journal-grid {
+      display: grid;
 
-.journal-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 25px;
-  align-items: start;
-}
+      grid-template-columns: repeat(3, 1fr);
 
-.journal-card {
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
+      gap: 25px;
+    }
 
-  border-top: 1px solid var(--border);
-  padding-top: 20px;
-}
+    .journal-card {
+      border-top: 1px solid var(--border);
 
-.journal-card img {
-  display: block;
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  margin-bottom: 25px;
-  flex-shrink: 0;
-}
+      padding-top: 20px;
+    }
 
-.journal-card small {
-  display: block;
+    .journal-card img {
+      height: 250px;
 
-  color: var(--accent);
+      object-fit: cover;
 
-  text-transform: uppercase;
+      margin-bottom: 25px;
+    }
 
-  letter-spacing: 2px;
+    .journal-card small {
+      color: var(--accent);
 
-  font-size: 9px;
+      text-transform: uppercase;
 
-  margin-bottom: 8px;
-}
+      letter-spacing: 2px;
 
-.journal-card h3 {
-  display: block;
+      font-size: 9px;
+    }
 
-  font-family: Georgia, serif;
+    .journal-card h3 {
+      font-family: Georgia, serif;
 
-  font-size: 26px;
+      font-size: 26px;
 
-  font-weight: normal;
+      font-weight: normal;
 
-  line-height: 1.25;
-
-  margin: 0;
-}
+      margin-top: 10px;
+    }
 
 
     /* ==============================
@@ -1100,6 +1085,7 @@
       .journal-grid {
         grid-template-columns: 1fr;
       }
+
 
       /* CONTACT */
 
@@ -1812,12 +1798,11 @@
   <div class="journal-grid">
 
 
-    <a href="understanding-fabric-qualities.html" class="journal-card">
+    <article class="journal-card">
 
       <img
         src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=1000&q=85"
-        alt="Fabric texture" loading="lazy">
-</a> 
+        alt="Fabric texture">
 
       <small>
         Fabric Guide
@@ -1830,12 +1815,11 @@
     </article>
 
 
-    <a href="viscose-feel-drape-versatility.html" class="journal-card">
+    <article class="journal-card">
 
       <img
         src="https://images.unsplash.com/photo-1566206091558-7f218b696731?auto=format&fit=crop&w=1000&q=85"
-        alt="Viscose fabric" loading="lazy">
-</a>
+        alt="Viscose fabric">
 
       <small>
         Fabric Guide
@@ -1848,12 +1832,11 @@
     </article>
 
 
-    <a href="choosing-the-right-fabric.html" class="journal-card">
+    <article class="journal-card">
 
       <img
         src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=1000&q=85"
-        alt="Fashion fabric" loading="lazy">
-</a>
+        alt="Fashion fabric">
 
       <small>
         Textile Insights
