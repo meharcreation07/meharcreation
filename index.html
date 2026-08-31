@@ -247,6 +247,38 @@
       background: var(--accent);
     }
 
+    .hero-buttons {
+      display: flex;
+
+      gap: 15px;
+
+      flex-wrap: wrap;
+    }
+
+    .button-outline {
+      display: inline-block;
+
+      width: fit-content;
+
+      padding: 15px 28px;
+
+      background: transparent;
+      color: var(--dark);
+
+      border: 1px solid var(--dark);
+
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+
+      transition: 0.3s;
+    }
+
+    .button-outline:hover {
+      background: var(--dark);
+      color: white;
+    }
+
     .hero-image {
       min-height: 100%;
 
@@ -704,6 +736,45 @@
 
 
     /* ==============================
+       WHY US
+    ============================== */
+
+    .whyus-grid {
+      display: grid;
+
+      grid-template-columns: repeat(4, 1fr);
+
+      border-top: 1px solid var(--border);
+    }
+
+    .whyus-item {
+      padding: 40px 25px;
+
+      border-right: 1px solid var(--border);
+    }
+
+    .whyus-item:last-child {
+      border-right: none;
+    }
+
+    .whyus-item h3 {
+      font-family: Georgia, serif;
+
+      font-weight: normal;
+
+      font-size: 23px;
+
+      margin-bottom: 15px;
+    }
+
+    .whyus-item p {
+      color: var(--muted);
+
+      font-size: 13px;
+    }
+
+
+    /* ==============================
        APPLICATIONS
     ============================== */
 
@@ -1121,6 +1192,17 @@
       }
 
 
+      /* WHY US */
+
+      .whyus-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .whyus-item {
+        border-bottom: 1px solid var(--border);
+      }
+
+
       /* APPLICATIONS */
 
       .application-grid {
@@ -1194,6 +1276,8 @@
 
       <a href="#about">About</a>
 
+      <a href="#why-us">Why Us</a>
+
       <a href="#expertise">Expertise</a>
 
       <a href="#journal">Journal</a>
@@ -1231,9 +1315,17 @@
 	to manufacturers, designers, garment brands and businesses across India.
     </p>
 
-    <a href="#fabrics" class="button">
-      Explore Fabrics
-    </a>
+    <div class="hero-buttons">
+
+      <a href="#fabrics" class="button">
+        Explore Fabrics
+      </a>
+
+      <a href="#requirement" class="button-outline">
+        Tell Us Your Requirement
+      </a>
+
+    </div>
 
   </div>
 
@@ -1661,9 +1753,92 @@
 	<p>
         Serving textile businesses across India. 
 	<br>
+	<br>
 	Surat • Mumbai • Jaipur • Delhi • Kolkata • Ahmedabad • Amritsar • Lucknow
       </p>
     </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- ==============================
+     WHY MEHAR CREATION
+============================== -->
+
+<section class="section" id="why-us">
+
+  <div class="section-heading">
+
+    <div>
+
+      <div class="eyebrow">
+        Why Choose Us
+      </div>
+
+      <h2>Why Mehar Creation</h2>
+
+    </div>
+
+  </div>
+
+
+  <div class="whyus-grid">
+
+
+    <div class="whyus-item">
+
+      <div class="number">01</div>
+
+      <h3>Sourcing Network</h3>
+
+      <p>
+        Access to a wide range of textile qualities.
+      </p>
+
+    </div>
+
+
+    <div class="whyus-item">
+
+      <div class="number">02</div>
+
+      <h3>Requirement-Based Sourcing</h3>
+
+      <p>
+        We source according to your specific specifications.
+      </p>
+
+    </div>
+
+
+    <div class="whyus-item">
+
+      <div class="number">03</div>
+
+      <h3>Quality Focus</h3>
+
+      <p>
+        Attention to composition, GSM, width and application.
+      </p>
+
+    </div>
+
+
+    <div class="whyus-item">
+
+      <div class="number">04</div>
+
+      <h3>PAN India Supply</h3>
+
+      <p>
+        Serving manufacturers, designers and textile businesses across India.
+      </p>
+
+    </div>
+
 
   </div>
 
@@ -1824,7 +1999,7 @@
      SEND YOUR REQUIREMENT
 ============================== -->
 
-<section class="requirement-section">
+<section class="requirement-section" id="requirement">
 
   <div class="requirement-container">
 
