@@ -739,22 +739,52 @@
        WHY US
     ============================== */
 
+    .whyus-section {
+      background: var(--beige);
+
+      padding: 120px 30px;
+    }
+
+    .whyus-container {
+      max-width: 1250px;
+
+      margin: auto;
+    }
+
     .whyus-grid {
       display: grid;
 
       grid-template-columns: repeat(4, 1fr);
 
-      border-top: 1px solid var(--border);
+      border-top: 1px solid rgba(41, 39, 34, 0.14);
     }
 
     .whyus-item {
       padding: 40px 25px;
 
-      border-right: 1px solid var(--border);
+      border-right: 1px solid rgba(41, 39, 34, 0.14);
     }
 
     .whyus-item:last-child {
       border-right: none;
+    }
+
+    .whyus-icon {
+      width: 34px;
+      height: 34px;
+
+      margin-bottom: 22px;
+    }
+
+    .whyus-icon svg {
+      width: 100%;
+      height: 100%;
+
+      fill: none;
+      stroke: var(--accent);
+      stroke-width: 1.3;
+      stroke-linecap: round;
+      stroke-linejoin: round;
     }
 
     .whyus-item h3 {
@@ -1194,12 +1224,16 @@
 
       /* WHY US */
 
+      .whyus-section {
+        padding: 80px 20px;
+      }
+
       .whyus-grid {
         grid-template-columns: 1fr 1fr;
       }
 
       .whyus-item {
-        border-bottom: 1px solid var(--border);
+        border-bottom: 1px solid rgba(41, 39, 34, 0.14);
       }
 
 
@@ -1768,7 +1802,9 @@
      WHY MEHAR CREATION
 ============================== -->
 
-<section class="section" id="why-us">
+<section class="whyus-section" id="why-us">
+
+  <div class="whyus-container">
 
   <div class="section-heading">
 
@@ -1790,7 +1826,16 @@
 
     <div class="whyus-item">
 
-      <div class="number">01</div>
+      <div class="whyus-icon">
+        <svg viewBox="0 0 24 24">
+          <circle cx="6" cy="6" r="2.2"></circle>
+          <circle cx="18" cy="6" r="2.2"></circle>
+          <circle cx="12" cy="18" r="2.2"></circle>
+          <line x1="7.6" y1="7.6" x2="10.6" y2="16"></line>
+          <line x1="16.4" y1="7.6" x2="13.4" y2="16"></line>
+          <line x1="8.2" y1="6" x2="15.8" y2="6"></line>
+        </svg>
+      </div>
 
       <h3>Sourcing Network</h3>
 
@@ -1803,7 +1848,15 @@
 
     <div class="whyus-item">
 
-      <div class="number">02</div>
+      <div class="whyus-icon">
+        <svg viewBox="0 0 24 24">
+          <rect x="5" y="4" width="14" height="17" rx="1.5"></rect>
+          <path d="M9 4V3a1 1 0 011-1h4a1 1 0 011 1v1"></path>
+          <line x1="8" y1="10" x2="16" y2="10"></line>
+          <line x1="8" y1="14" x2="16" y2="14"></line>
+          <line x1="8" y1="18" x2="13" y2="18"></line>
+        </svg>
+      </div>
 
       <h3>Requirement-Based Sourcing</h3>
 
@@ -1816,7 +1869,13 @@
 
     <div class="whyus-item">
 
-      <div class="number">03</div>
+      <div class="whyus-icon">
+        <svg viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="8.5"></circle>
+          <circle cx="12" cy="12" r="4.5"></circle>
+          <circle cx="12" cy="12" r="0.8" fill="var(--accent)" stroke="none"></circle>
+        </svg>
+      </div>
 
       <h3>Quality Focus</h3>
 
@@ -1829,7 +1888,12 @@
 
     <div class="whyus-item">
 
-      <div class="number">04</div>
+      <div class="whyus-icon">
+        <svg viewBox="0 0 24 24">
+          <path d="M12 21s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z"></path>
+          <circle cx="12" cy="9" r="2.3"></circle>
+        </svg>
+      </div>
 
       <h3>PAN India Supply</h3>
 
@@ -1839,6 +1903,8 @@
 
     </div>
 
+
+  </div>
 
   </div>
 
