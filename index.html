@@ -29,14 +29,14 @@
 <meta property="og:site_name" content="Mehar Creation">
 <meta property="og:title" content="Mehar Creation | Fine Fabrics & Textile Sourcing">
 <meta property="og:description" content="Mehar Creation is a Surat-based textile sourcing and fabric trading company supplying quality viscose, polyester, nylon, blends and specialty fabrics across India.">
-<meta property="og:image" content="https://meharcreation.com/images/Hero_banner.png">
+<meta property="og:image" content="https://meharcreation.com/images/hero-banner.jpg">
 <meta property="og:url" content="https://meharcreation.com/">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Mehar Creation | Fine Fabrics & Textile Sourcing">
 <meta name="twitter:description" content="Surat-based textile sourcing and fabric trading — viscose, polyester, nylon, blends and specialty fabrics, supplied across India.">
-<meta name="twitter:image" content="https://meharcreation.com/images/Hero_banner.png">
+<meta name="twitter:image" content="https://meharcreation.com/images/hero-banner.jpg">
 
 <!-- LocalBusiness structured data (helps Google understand who/where you are) -->
 <script type="application/ld+json">
@@ -44,7 +44,7 @@
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "Mehar Creation",
-  "image": "https://meharcreation.com/images/Hero_banner.png",
+  "image": "https://meharcreation.com/images/hero-banner.jpg",
   "url": "https://meharcreation.com/",
   "telephone": "+91-99534-14166",
   "email": "meharcreation07@gmail.com",
@@ -282,8 +282,11 @@
     .hero-image {
       min-height: 100%;
 
-      background-image:
-        url("images/Hero_banner.png");
+      background-image: url("images/hero-banner.jpg");
+      background-image: image-set(
+        url("images/hero-banner.webp") type("image/webp") 1x,
+        url("images/hero-banner.jpg") type("image/jpeg") 1x
+      );
 
       background-size: cover;
       background-position: center;
@@ -871,6 +874,10 @@
       border-top: 1px solid var(--border);
 
       padding-top: 20px;
+    }
+
+    .journal-card picture {
+      display: block;
     }
 
     .journal-card img {
@@ -1837,10 +1844,10 @@
         </svg>
       </div>
 
-      <h3>Sourcing Network</h3>
+      <h3>Direct Manufacturer Access</h3>
 
       <p>
-        Access to a wide range of textile qualities.
+        We work directly with mills and manufacturers, cutting out unnecessary middlemen.
       </p>
 
     </div>
@@ -1858,7 +1865,7 @@
         </svg>
       </div>
 
-      <h3>Requirement-Based Sourcing</h3>
+      <h3>Built Around Your Business</h3>
 
       <p>
         Every requirement is different — we adapt our sourcing to match yours, not the other way around.
@@ -2818,9 +2825,15 @@
 
     <article class="journal-card">
 
-      <img
-        src="images/Understanding_fabric_qualities.png"
-        alt="Fabric texture">
+      <picture>
+        <source srcset="images/understanding-fabric-qualities.webp" type="image/webp">
+        <img
+          src="images/understanding-fabric-qualities.jpg"
+          alt="Folded stack of natural fabric rolls in cream, tan and olive tones"
+          width="900"
+          height="600"
+          loading="lazy">
+      </picture>
 
       <small>
         Fabric Guide
@@ -2852,9 +2865,15 @@
 
     <article class="journal-card">
 
-      <img
-        src="images/Choosing_right_fabric.png"
-        alt="Fashion fabric">
+      <picture>
+        <source srcset="images/choosing-the-right-fabric.webp" type="image/webp">
+        <img
+          src="images/choosing-the-right-fabric.jpg"
+          alt="Fabric swatches, tape measure and notebook laid out with a checklist for choosing the right fabric"
+          width="900"
+          height="612"
+          loading="lazy">
+      </picture>
 
       <small>
         Textile Insights
