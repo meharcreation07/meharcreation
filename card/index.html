@@ -39,8 +39,7 @@ body{
 /* TOP / HERO */
 .hero{
   position:relative;min-height:660px;padding:48px 22px 25px;overflow:hidden;
-  background:linear-gradient(105deg,rgba(255,250,248,.96),rgba(255,247,245,.78)),
-             url('card-header.jpg');
+  background:linear-gradient(105deg,rgba(112,68,62,.28),rgba(112,68,62,.12)),url('card-header.jpg');
   background-size:cover;background-position:center right;
 }
  .hero::before{
@@ -50,7 +49,7 @@ body{
   top:0;
   width:54%;
   height:100%;
-  background:linear-gradient(90deg,rgba(255,250,248,.55),rgba(255,250,248,0));
+  background:linear-gradient(90deg,rgba(255,250,248,.12),rgba(255,250,248,0));
   pointer-events:none;
 }
  .hero::after{
@@ -143,10 +142,7 @@ body{
   text-decoration:none;
   color:#fff;
   padding:35px 25px 24px 255px;
-  background-image:linear-gradient(90deg,rgba(140,91,84,.18),rgba(167,113,104,.96)),url('know-your-fabrics.jpg');
-  background-size:235px 100%, 235px 100%;
-  background-position:left top;
-  background-repeat:no-repeat;
+  background:#a77168;
 }
 .feature::before{
   content:"";
@@ -155,22 +151,12 @@ body{
   top:0;
   bottom:0;
   width:235px;
-  background:
-    repeating-linear-gradient(101deg,rgba(255,255,255,.33) 0 2px,transparent 2px 8px),
-    linear-gradient(125deg,#eee1da,#c9aaa0 52%,#8f7772);
-  clip-path:polygon(0 0,100% 0,87% 100%,0 100%);
+  background-image:url('know-your-fabrics.jpg');background-size:cover;background-position:center;background-repeat:no-repeat;clip-path:polygon(0 0,100% 0,87% 100%,0 100%);
 }
 .feature .feature-content{position:relative;z-index:2}
-.eyebrow{
-  font-size:12px;
-  letter-spacing:4px;
-  text-transform:uppercase;
-  opacity:.95;
+.eyebrow{font-size:12px;letter-spacing:4px;text-transform:uppercase;opacity:1;text-shadow:0 1px 3px rgba(70,35,30,.22);
 }
-.feature h2{
-  margin:8px 0 8px;
-  font-size:29px;
-  line-height:1;
+.feature h2{margin:8px 0 8px;font-size:26px;line-height:1.05;text-shadow:0 1px 4px rgba(70,35,30,.25);
   text-transform:uppercase;
 }
 .feature p{
